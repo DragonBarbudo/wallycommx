@@ -1,0 +1,368 @@
+*{margin:0; padding:0;}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,dialog,div,dl,dt,em,embed,fieldset,figcaption,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,hr,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,meter,nav,object,ol,output,p,pre,progress,q,rp,rt,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video,xmp{border:0;font-size:100%;margin:0;padding:0}html,body{height:100%}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}b,strong{font-weight:700}img{font-size:0;vertical-align:middle}li{display:list-item}table{border-collapse:collapse;border-spacing:0}th,td,caption{font-weight:400;vertical-align:top;text-align:left}svg{overflow:hidden}
+
+
+/*
+	960 Grid System ~ Core CSS.
+	Learn more ~ http://960.gs/
+	Licensed under GPL and MIT.
+*/
+@columns: 16;
+/* width */
+@w:960px/@columns;
+.container { margin: 0 auto; width: 960px; }
+.grid { display: inline; float: left; position: relative; margin-left: 10px; margin-right: 10px; }
+.alpha { margin-left: 0;  }
+.omega { margin-right: 0; }
+.grid_(@num){ .grid; width: (@w*@num)-20px; }
+.prefix_(@num){ padding-left: @w*@num; }
+.suffix_(@num){ padding-right: @w*@num; }
+.push_(@num){ left: @w*@num; }
+.pull_(@num){ left: -(@w*@num); }
+.clear { clear: both; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+
+
+/* CLASSES *	*	*	*	*	*	*	*	*	*	*/
+.rounded(@r:10px){
+	border-radius: @r;-webkit-border-radius: @r;-moz-border-radius: @r;-o-border-radius: @r;
+	overflow: hidden;
+	behavior:url(PIE.htc);
+}
+.shadow(@x:1px, @y:1px, @b:5px, @c:#000000){
+	box-shadow: @x @y @b @c;-webkit-box-shadow: @x @y @b @c;-moz-box-shadow: @x @y @b @c;-o-box-shadow: @x @y @b @c;
+	behavior:url(PIE.htc);
+}
+.inset(@c:#fff){
+	text-shadow: 0px 1px @c;
+}
+a{
+	text-decoration: none;
+	&:hover{ text-decoration: underline; }
+}
+.font{
+	 font: 16px/16px 'Carter One', arial, serif;
+}
+
+
+
+/*	*	*	*	*/
+
+@c1: #fff;
+@c2: #000;
+@c3: #00CCFF;
+@c4: #292929;
+/*	*	*	*	*	*	*	*	*	*	*	*	*	*/
+
+
+/* CSS CODE */
+
+body{
+	background: #000;
+	background: url(../imgs/fullbg.png);
+}
+#f{
+	width: 100%;
+	height: 1200px;
+	background: url(../imgs/bg.jpg) repeat-x;
+}
+
+#full{
+	.container;
+	background: url(../imgs/background.jpg);
+	height: 1200px;
+}
+
+#sun{
+	.grid_(5);
+	margin-top: 60px;
+}
+#spaceman{
+	.grid_(2);
+	.push_(4);
+	margin-top: 40px;
+}
+#mars{
+	.grid_(2);
+	.push_(7);
+	margin-top: 20px;
+}
+
+#cloud{
+	.grid_(3);
+	.push_(6);
+	margin-top: -100px;
+}
+#cloud2{
+	.grid_(3);
+	.push_(13);
+	margin-top: -40px;
+}
+#island{
+	.grid_(4);
+	margin-top: 50px;
+}
+#ark{
+	.grid_(5);
+	.push_(6);
+	margin-top: -10px;
+	img{
+		position: absolute;
+	}
+}
+
+#castle{
+	.grid_(4);
+	margin-top: 10px;
+}
+
+h1{
+	.grid_(6);
+	.push_(1);
+	margin-top: -40px;
+}
+#camera{
+	.grid_(4);
+	.push_(2);
+	margin-top: 40px;
+}
+
+footer{
+}
+
+
+#underwater{
+	.font;
+	color: #ffffff;
+	margin-top: 160px;
+	form{
+		.grid_(6);
+		padding-right: 20px;
+		label{
+			display: block;
+			margin: 10px 0 5px 0;
+			text-shadow: 0px 0px 5px #ffffff;
+			font-size: 1.4em;
+		}
+
+		.input{
+			background: url(../imgs/input.png);
+			height: 43px;
+			input{
+				margin: 5px 15px;
+				width: 310px;
+				padding: 4px 1px;
+				border: none;
+				background: transparent;
+				.font;
+			}
+		}
+		.left{
+			float: left;
+			width: 160px;
+			.input{
+				background: url(../imgs/agebtn.png);
+				height: 43px;
+				input{
+					margin: 5px 15px;
+					width: 130px;
+					text-align: center;
+					padding: 4px 1px;
+					border: none;
+					background: transparent;
+					.font;
+				}
+			}
+		}
+		#left1{
+			width: 180px;
+			button{
+				border: none;
+				background: none;
+				float: left;
+				width: 86px;
+				height: 40px;
+				cursor: pointer;
+			}
+			#boy{
+				background: url(../imgs/boy.png) left;
+			}
+			#girl{
+				background: url(../imgs/girl.png) right;
+			}
+		}
+		input[type=submit]{
+			margin: 10px 0 20px 0;
+			display: block;
+			width: 110px;
+			height: 45px;
+			border: none;
+			background: url(../imgs/enviar.png) left;
+			cursor: pointer;
+			float: right;
+			&:hover{
+				background: url(../imgs/enviar.png) right;
+			}
+		}		
+	}
+	#minero{
+		.grid_(5);
+	}
+	address{
+		font-style: normal;
+		.grid_(8);
+		.push_(1);
+		.suffix_(1);
+		h3, h4{
+			
+			color: #18D1F0;
+			text-shadow: 0px 0px 10px #18D1F0;
+			font-weight: normal;
+			text-align: center;
+			a{
+				color: #18D1F0;
+				&:hover{
+					color: #fff;
+					text-decoration: none;
+				}
+			}
+		}
+		h3{
+			font-size: 4.3em;
+			line-height: 1.2em;
+		}
+		h4{
+			font-size: 2.5em;
+			line-height: 2em;
+			
+		}
+	}
+	
+	.error{
+		position: absolute;
+		right: 0;
+		background: #880000;
+		.rounded;
+		p{
+			margin: 5px;
+			font-size: 0.7em;
+
+		}
+	}
+	#response{
+		text-align: center;
+		line-height: 3em;
+		h3{
+			font-size: 1.3em;
+		}
+	}
+}
+
+
+
+
+/*buttons*/
+nav a{
+	position: relative;
+	overflow: visible;
+}
+#graduaciones{
+    .grid_(7);
+    .push_(7);
+	margin-top: -90px;
+	img{ position: absolute; right: 0;}
+}
+#curso{
+	.grid_(7);
+	.push_(4);
+	margin-top: -30px;
+	img{ position: absolute; right: 0;}
+}
+
+#clases{
+	.grid_(7);
+	margin-top: 30px;
+}
+#fiestas{
+	.grid_(7);
+	.push_(2);
+	margin-top: -13px;
+	img{ position: absolute; right: 0;}
+}
+#registrate{
+	.grid_(7);
+	margin-top: 80px;
+}
+#contactanos{
+	.grid_(7);
+	.push_(2);
+	margin-top: 153px;
+	img{ position: absolute; right: 0;}
+}
+
+.modal{
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    top:0; left: 0; right: 0; bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    }
+.bignews{
+    text-align: center;
+     position: fixed;     
+    .rounded(30px);
+    overflow: visible;
+    .font;
+    width:80%;
+    left: 10%;
+    top: 40px;
+    z-index: 100;
+    .clouse{
+        background: url(../imgs/bg.jpg);
+         color: @c1;
+         padding: 13px 18px 15px 18px;
+         .rounded(20px);
+         border: 8px solid @c3;
+         position:absolute;
+         right: -20px;
+         top: -20px;
+         cursor: pointer;
+         font-size: 2em;
+         &:hover{
+             background: url(../imgs/bg.jpg) center;
+             color: @c2;
+             border: 8px solid #FFE900;
+             }
+        }
+	article{
+		background:@c2;
+		border: 8px solid #FFE900;
+		margin-bottom: 20px;
+		.rounded(30px);
+		p{
+			margin: 10px;
+			color: @c1;
+			font-size:1.1em;
+			line-height: 1.4em;
+			strong{
+				font-size: 1.3em;
+				color: @c3;
+			}
+			span{
+				color: #FFE900;
+			}
+		}
+	}
+}
+
+#seagull{
+		position: absolute;
+		z-index: 20;
+		top:500px;
+		background: url(../imgs/seagull.png) left;
+	a{
+		display: block;
+		width: 229px;
+		height: 62px;
+		
+	}
+}

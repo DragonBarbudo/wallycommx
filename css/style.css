@@ -1,0 +1,55 @@
+*{margin:0;padding:0;}
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,dialog,div,dl,dt,em,embed,fieldset,figcaption,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,hr,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,meter,nav,object,ol,output,p,pre,progress,q,rp,rt,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video,xmp{border:0;font-size:100%;margin:0;padding:0;}
+html,body{height:100%;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+b,strong{font-weight:700;}
+img{font-size:0;vertical-align:middle;}
+li{display:list-item;}
+table{border-collapse:collapse;border-spacing:0;}
+th,td,caption{font-weight:400;vertical-align:top;text-align:left;}
+svg{overflow:hidden;}
+.container{margin:0 auto;width:960px;}
+.grid{display:inline;float:left;position:relative;margin-left:10px;margin-right:10px;}
+.alpha{margin-left:0;}
+.omega{margin-right:0;}
+.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0;}
+a{text-decoration:none;}a:hover{text-decoration:underline;}
+.font{font:16px/16px 'Carter One',arial,serif;}
+body{background:#000;background:url(../imgs/fullbg.png);}
+#f{width:100%;height:1200px;background:url(../imgs/bg.jpg) repeat-x;}
+#full{margin:0 auto;width:960px;background:url(../imgs/background.jpg);height:1200px;}
+#sun{display:inline;float:left;position:relative;margin-left:10px;margin-right:10px;width:280px;margin-top:60px;}
+#spaceman{display:inline;float:left;position:relative;margin-left:10px;margin-right:10px;width:100px;left:240px;margin-top:40px;}
+#mars{display:inline;float:left;position:relative;margin-left:10px;margin-right:10px;width:100px;left:420px;margin-top:20px;}
+#cloud{display:inline;float:left;position:relative;margin-left:10px;margin-right:10px;width:160px;left:360px;margin-top:-100px;}
+#cloud2{display:inline;float:left;position:relative;margin-left:10px;margin-right:10px;width:160px;left:780px;margin-top:-40px;}
+#island{display:inline;float:left;position:relative;margin-left:10px;margin-right:10px;width:220px;margin-top:50px;}
+#ark{display:inline;float:left;position:relative;margin-left:10px;margin-right:10px;width:280px;left:360px;margin-top:-10px;}#ark img{position:absolute;}
+#castle{display:inline;float:left;position:relative;margin-left:10px;margin-right:10px;width:220px;margin-top:10px;}
+h1{display:inline;float:left;position:relative;margin-left:10px;margin-right:10px;width:340px;left:60px;margin-top:-40px;}
+#camera{display:inline;float:left;position:relative;margin-left:10px;margin-right:10px;width:220px;left:120px;margin-top:40px;}
+#underwater{font:16px/16px 'Carter One',arial,serif;color:#ffffff;margin-top:160px;}#underwater form{display:inline;float:left;position:relative;margin-left:10px;margin-right:10px;width:340px;padding-right:20px;}#underwater form label{display:block;margin:10px 0 5px 0;text-shadow:0px 0px 5px #ffffff;font-size:1.4em;}
+#underwater form .input{background:url(../imgs/input.png);height:43px;}#underwater form .input input{margin:5px 15px;width:310px;padding:4px 1px;border:none;background:transparent;font:16px/16px 'Carter One',arial,serif;}
+#underwater form .left{float:left;width:160px;}#underwater form .left .input{background:url(../imgs/agebtn.png);height:43px;}#underwater form .left .input input{margin:5px 15px;width:130px;text-align:center;padding:4px 1px;border:none;background:transparent;font:16px/16px 'Carter One',arial,serif;}
+#underwater form #left1{width:180px;}#underwater form #left1 button{border:none;background:none;float:left;width:86px;height:40px;cursor:pointer;}
+#underwater form #left1 #boy{background:url(../imgs/boy.png) left;}
+#underwater form #left1 #girl{background:url(../imgs/girl.png) right;}
+#underwater form input[type=submit]{margin:10px 0 20px 0;display:block;width:110px;height:45px;border:none;background:url(../imgs/enviar.png) left;cursor:pointer;float:right;}#underwater form input[type=submit]:hover{background:url(../imgs/enviar.png) right;}
+#underwater #minero{display:inline;float:left;position:relative;margin-left:10px;margin-right:10px;width:280px;}
+#underwater address{font-style:normal;display:inline;float:left;position:relative;margin-left:10px;margin-right:10px;width:460px;left:60px;padding-right:60px;}#underwater address h3,#underwater address h4{color:#18D1F0;text-shadow:0px 0px 10px #18D1F0;font-weight:normal;text-align:center;}#underwater address h3 a,#underwater address h4 a{color:#18D1F0;}#underwater address h3 a:hover,#underwater address h4 a:hover{color:#fff;text-decoration:none;}
+#underwater address h3{font-size:4.3em;line-height:1.2em;}
+#underwater address h4{font-size:2.5em;line-height:2em;}
+#underwater .error{position:absolute;right:0;background:#880000;border-radius:10px;-webkit-border-radius:10px;-moz-border-radius:10px;-o-border-radius:10px;overflow:hidden;behavior:url(PIE.htc);}#underwater .error p{margin:5px;font-size:0.7em;}
+#underwater #response{text-align:center;line-height:3em;}#underwater #response h3{font-size:1.3em;}
+nav a{position:relative;overflow:visible;}
+#graduaciones{display:inline;float:left;position:relative;margin-left:10px;margin-right:10px;width:400px;left:420px;margin-top:-90px;}#graduaciones img{position:absolute;right:0;}
+#curso{display:inline;float:left;position:relative;margin-left:10px;margin-right:10px;width:400px;left:240px;margin-top:-30px;}#curso img{position:absolute;right:0;}
+#clases{display:inline;float:left;position:relative;margin-left:10px;margin-right:10px;width:400px;margin-top:30px;}
+#fiestas{display:inline;float:left;position:relative;margin-left:10px;margin-right:10px;width:400px;left:120px;margin-top:-13px;}#fiestas img{position:absolute;right:0;}
+#registrate{display:inline;float:left;position:relative;margin-left:10px;margin-right:10px;width:400px;margin-top:80px;}
+#contactanos{display:inline;float:left;position:relative;margin-left:10px;margin-right:10px;width:400px;left:120px;margin-top:153px;}#contactanos img{position:absolute;right:0;}
+.modal{background:rgba(0, 0, 0, 0.8);position:fixed;top:0;left:0;right:0;bottom:0;width:100%;height:100%;z-index:99;}
+.bignews{text-align:center;position:fixed;border-radius:30px;-webkit-border-radius:30px;-moz-border-radius:30px;-o-border-radius:30px;overflow:hidden;behavior:url(PIE.htc);overflow:visible;font:16px/16px 'Carter One',arial,serif;width:80%;left:10%;top:40px;z-index:100;}.bignews .clouse{background:url(../imgs/bg.jpg);color:#ffffff;padding:13px 18px 15px 18px;border-radius:20px;-webkit-border-radius:20px;-moz-border-radius:20px;-o-border-radius:20px;overflow:hidden;behavior:url(PIE.htc);border:8px solid #00ccff;position:absolute;right:-20px;top:-20px;cursor:pointer;font-size:2em;}.bignews .clouse:hover{background:url(../imgs/bg.jpg) center;color:#000000;border:8px solid #FFE900;}
+.bignews article{background:#000000;border:8px solid #FFE900;margin-bottom:20px;border-radius:30px;-webkit-border-radius:30px;-moz-border-radius:30px;-o-border-radius:30px;overflow:hidden;behavior:url(PIE.htc);}.bignews article p{margin:10px;color:#ffffff;font-size:1.1em;line-height:1.4em;}.bignews article p strong{font-size:1.3em;color:#00ccff;}
+.bignews article p span{color:#FFE900;}
+#seagull{position:absolute;z-index:20;top:500px;background:url(../imgs/seagull.png) left;}#seagull a{display:block;width:229px;height:62px;}
