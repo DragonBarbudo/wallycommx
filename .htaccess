@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www.wally.com.mx [NC]
+RewriteRule ^(.*)$ http://wally.com.mx/$1 [L,R=301]

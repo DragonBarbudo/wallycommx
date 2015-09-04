@@ -8,6 +8,7 @@ $('.clouse').click(function(){
 });
 
 /* CONTACTO form */
+/*
 $("#formulary").submit(function(){
 var _name=$("#formulary #name").val().trim();
 var _mail=$("#formulary #mail").val().trim();
@@ -50,8 +51,8 @@ $("#formulary").html(data);
 
 return false;
 });
+*/
 
-	
 /* root menu */
 	$('nav a img').animate({width:'0%'}, 200).animate({width:'100%'}, 600, 'easeOutElastic');
 	$('nav a').hover(function(){
@@ -61,9 +62,9 @@ return false;
 	}, function(){
 		$(this).children('img').stop().animate({width:'100%'}, 600, 'easeOutElastic');
 	});
-	
-	
-	
+
+
+
 /* registrate! */
 
 	$('#registroForm').hide();
@@ -72,11 +73,11 @@ return false;
 		$('#registroForm').slideDown(function(){
 			$.scrollTo('#registroForm', 500);
 		});
-		
+
 		return false;
 	});
 
-/* end registrate*/	
+/* end registrate*/
 
 
 /* contactanos! */
@@ -87,16 +88,16 @@ return false;
 		$('#contactoForm').slideDown(function(){
 			$.scrollTo('#contactoForm', 500);
 		});
-		
+
 		return false;
 	});
 
-/* end contactanos*/	
+/* end contactanos*/
 
 
 
 
-	
+
 /* form active boy/girl */
 	$('#left1 #boy').addClass('active');
 	$('#left1 button').hover(function(){
@@ -113,7 +114,7 @@ return false;
 		$('#left1 button').css({'background-position':'right'});
 		$(this).addClass('active').css({'background-position':'left'});;
 		var gen = $(this).attr('value');
-		$('#gender').attr({'value':gen});		
+		$('#gender').attr({'value':gen});
 		return false;
 	});
 /* end active boy/girl */
@@ -126,12 +127,12 @@ return false;
 
 function index(){
 	$.scrollTo(270, 1000);
-	
+
 	$('#seagull')
 			.sprite({fps: 9, no_of_frames: 3})
 					.spRandom({top: 600, bottom: 100, left: 700, right: 200})
 					.active();
-	
+
 	animating('#ark img', '-5px');
 }
 
