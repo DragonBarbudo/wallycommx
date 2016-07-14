@@ -1,0 +1,604 @@
+@import '../../dw3/_dw3';
+
+/* WIDTHS */
+@containerWidth: 1200px;
+@containerWidthTablet : 720px;
+@gutterWidth: 5px;
+/* COLORS */
+@b:   #222;
+@w:   #fff;
+@gray:    #888;
+@main:    #005282;
+@mainl:  #009BC0;
+@sec:     #F9B84D;
+@green: #BCCF00;
+@cian:  #69C3CB;
+@yellow: #F9CB17;
+
+
+/* ----------- */
+.font1{ font-family: 'Antic Slab', serif; }
+.font2{ font-family: 'Bangers', cursive; letter-spacing: 1px;}
+/* -----------  */
+
+.gradient{
+  .background-image(linear-gradient(#008AB8, #005282));
+}
+
+
+nav{
+  #navigationCheckboxButton{display: none;}
+  @media @tablet, @mobile{
+    #navigationCheckboxButton+ul{
+      //display: none;
+    }
+    #navigationCheckboxButton:checked+ul{
+      //display: block;
+    }
+  }
+}
+nav.horizontal{
+  ul{
+    .container;
+    @media @tablet, @mobile{
+      .fluid;
+    }
+    li{
+      display: block;
+      .c;
+      @media @tablet, @mobile{
+        .c12;
+      }
+    }
+  }
+  .navBtn{
+    display: none;
+    @media @tablet, @mobile{
+      display: block;
+    }
+  }
+}
+
+.tac{text-align: center;}
+.tal{text-align: left;}
+.tar{text-align: right;}
+
+
+
+
+
+/****  custom classes ******/
+
+
+.wallytxt{
+  .font2;
+  color:@w;
+  text-shadow: -3px 0px 0px  fade(@main/1.5, 30%);
+  font-weight: lighter;
+  letter-spacing: 1px;
+  @media @mobile{
+    line-height: 1em;
+  }
+}
+
+.waves{
+  .fluid;
+  svg, g{width: 100%; height: auto;}
+  #waves{
+    width: 100%;
+    .opacity(0.4);
+    #wave1{
+      path{ .floating(2s); }
+    }
+    #wave2{
+      path{ .floating(3s); }
+    }
+    #wave3{
+      path{.floating(4s);}
+    }
+  }
+}
+
+
+/****  custom styles ******/
+
+
+body{
+  //.box-sizing(border-box);
+  .font1;
+}
+
+
+
+
+
+
+
+nav.horizontal{
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 10;
+  text-align: center;
+  .gradient;
+  .wallytxt;
+  @media @tablet{
+    width: auto;
+    max-width: 30%;
+  }
+
+  label.navBtn{
+    @media @tablet, @mobile{
+      display: inline-block;
+      padding: 16px;
+      text-align: center;
+      float: left;
+    }
+  }
+
+  li{
+    a{
+      display: block;
+      color:@w;
+      font-size: 1.3em;
+      padding: 14px 5px;
+      &.active{color:@sec;}
+      @media @tablet{
+        padding: 10px 30px;
+      }
+    }
+  }
+  @media @tablet, @mobile{
+    ul{
+      clear: both;
+    }
+    #navigationCheckboxButton+ul{
+      display: block;
+
+    }
+    #navigationCheckboxButton:checked+ul{
+      display: none;
+    }
+  }
+}
+
+
+header#wally{
+  &.green{ background: @green; .transition(0.5s); }
+  &.cian{ background: @cian; .transition(0.5s); }
+  &.yellow{ background: @yellow; .transition(0.5s); }
+  padding-top: 100px;
+  position: relative;
+  slick{
+    .slick-slide{
+      position: relative;
+      height: 300px;
+
+
+      &:not(.slick-current){
+        .char.left{
+          .opacity(0);
+          .transform(translate(-50px, 0));
+          .transition(.5s);
+        }
+        .char.right{
+          .opacity(0);
+          .transform(translate(50px, 0));
+          .transition(.5s);
+        }
+        .mainTitle{
+          .opacity(0);
+          .transform(translate(0, 100px));
+          .transition(.5s);
+        }
+      }
+      &.slick-current{
+        .char.left{
+          .opacity(1);
+          .transform(translate(0, 0));
+          .transition(0.9s);
+        }
+        .char.right{
+          .opacity(1);
+          .transform(translate(0, 0));
+          .transition(0.9s);
+        }
+        .mainTitle{
+          .opacity(1);
+          .transform(translate(0, 0));
+          .transition(.7s);
+        }
+      }
+    }
+    .slick-dots{
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      left: 0; bottom: 0;
+      z-index: 3;
+      li{
+        display: inline-block;
+        font-size: 0;
+        &:after{
+          content:"";
+          display: block;
+          width: 14px; height: 14px;
+          .border-radius(50%);
+          background: @main;
+          margin: 5px;
+        }
+        &.slick-active:after{background: @sec;}
+      }
+    }
+  }
+  .mainTitle{
+    .wallytxt;
+    text-align: center;
+    font-size: 4em;
+    margin-top: 40px;
+    @media @mobile{
+      font-size: 3em;
+      margin-top: 20px;
+      line-height: 1em;
+    }
+  }
+  .char{
+    position: absolute;
+    &.crab_a{ left: 40px; bottom: 30px; width: 130px; @media @mobile{width: 80px; left: 10px;}}
+    &.crab_b{ left: 170px; bottom: 35px; width: 80px; @media @mobile{width: 50px; left: 100px;}}
+    &.mermaid_a{ right: 80px; bottom: 30px; width: 260px; @media @tablet, @mobile{width:200px;} @media @mobile{right: 10px;}}
+    &.ray_a{ right: 40px; bottom: 30px; width: 400px; @media @tablet, @mobile{width:200px;}@media @mobile{right: 10px; bottom: 60px;}}
+    &.octo_a{ right: 80px; bottom: 30px; width: 180px; @media @tablet, @mobile{width:120px;}@media @mobile{right: 10px;}}
+  }
+
+  .waves{
+    position: absolute;
+    bottom: 0; left: 0;
+  }
+
+
+
+}
+
+section{
+  min-height: 460px;
+  position: relative;
+  h3{
+    font-size: 3.5em;
+  }
+}
+
+
+.wavehr{
+  top: -30px;
+  @media @mobile{top:-24px;}
+  .fluid;
+  svg, g{width: 100%; height: auto;}
+  #wavehr{
+    width: 100%;
+  }
+  #top{.floating(4s);}
+  #bottom{.floating(5s);}
+  position: relative;
+  z-index: 1;
+}
+
+
+
+#about{
+  background:@mainl;
+  h1{
+    .wallytxt;
+    font-size: 2.8em;
+  }
+  p{
+    color:@w;
+    .font1;
+    font-weight: lighter;
+    font-size: 1.4em;
+  }
+  .initmap{
+    background-image: url(../img/initmap.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 502px; height: 332px;
+    position: relative;
+    margin-bottom: -130px;
+    z-index: 5;
+    margin-top: 40px;
+    @media @mobile{
+      width: 100%;
+      background-size: 100%;
+      margin-bottom: -20px;
+      margin-top: 20px;
+    }
+    .where{
+      position: absolute;
+      right: 20px; bottom: 20px;
+      background: @w;
+      padding: 10px;
+      text-align: right;
+      @media @mobile{bottom: 20%; right: 5%;}
+      p{
+        .font2;
+        color:@cian;
+        line-height: 1;
+        strong{
+          color: @mainl;
+          font-size: 1.6em;
+          text-shadow: -2px 0 0 @w/1.2;
+        }
+      }
+    }
+    .pin{
+      background: url(../img/pin.png);
+      width: 209px; height: 209px;
+      background-size: cover;
+      position: absolute;
+      left: 80px; top: 0px;
+    }
+  }
+  .imgCircles{
+    background-image: url(../img/circlekids.png);
+    background-size: 80%;
+    background-position: top center;
+    @media @tablet{
+      background-size: 100%;
+    }
+  }
+
+}
+
+#before{
+  @media @mobile{
+    padding-bottom: 80px;
+  }
+  background:@main;
+  .wavehr{ #top{fill:@mainl/1.2;} #bottom{fill:@main;} }
+  .boy{margin-top: -280px; position: relative;z-index: 4; float:right; }
+  .minititle{
+    .wallytxt;
+    color:@cian;
+    font-size: 2em;
+    margin-top: 40px;
+  }
+  p{
+    color:@w;
+    font-size: 1.2em;
+  }
+  .diver{margin-left: -10px; .floating(1s); @media @tablet{ margin-top: 40px;} }
+}
+
+#acuatifiestas{
+  padding-bottom: 120px;
+  background:@green;
+  .wavehr{ #top{fill:@main/1.2;} #bottom{fill:@green;} }
+  .waves{position: absolute; left: 0; bottom: 0;}
+  p{color:@main; font-size: 1.2em; margin-top: 30px;}
+  .paquetes{
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    h4{ font-size: 2em; margin-top: 180px; text-align: center; @media @mobile{ margin-top: 10px; margin-bottom: 10px; } }
+    .paq{
+
+      background: @w;
+      width: 90%;
+      margin: 0 auto;
+      @media @mobile{margin-top: 10px;}
+      .border-radius(6px);
+      .paqtitle{ .wallytxt; text-align: center; .gradient; padding: 5px; .border-radius(6px 6px 0 0); font-size: 1.7em; }
+      .time{ .wallytxt; color:@main;  text-align: center; font-size: 1.5em; padding: 10px; }
+      ul{
+        list-style: none;
+        li{
+          padding: 10px;
+          color:@main;
+          &:before{
+            content:"\f043";
+            font: normal normal normal 14px/1 FontAwesome;
+            color:@green;
+            font-size: 1.4em;
+            margin-right: 10px;
+            margin-left: 10px;
+          }
+        }
+      }
+      .extra{
+        color:@gray;
+        .tar;
+        padding: 10px;
+        font-size: 0.9em;
+        strong{ color:@main; }
+      }
+    }
+
+  }
+  .tambien{ color:@w; .tac; font-size: 1.2em;   margin-bottom: 20px; }
+}
+
+#natacion{
+  padding-bottom: 120px;
+  background:@cian;
+  .wavehr{ #top{fill:@green/1.2;} #bottom{fill:@cian;} }
+  .waves{position: absolute; left: 0; bottom: 0;}
+  p{color:@main; font-size: 1.2em; margin-top: 30px;}
+  h4{ font-size: 2em; margin-top: 20px; text-align: center; }
+  .tambien{ color:@w; .tac; font-size: 1.2em;   margin-bottom: 20px; margin-top: 20px;}
+}
+
+#curso-de-verano{
+  padding-bottom: 120px;
+  background:@yellow;
+  .wavehr{ #top{fill:@cian/1.2;} #bottom{fill:@yellow;} }
+  .waves{position: absolute; left: 0; bottom: 0;}
+  p{color:@main; font-size: 1.2em; margin-top: 30px;}
+
+  .nextcurso{
+    margin-top: -100px;
+    @media @mobile{margin-top: 20px;}
+    .wallytxt{
+      font-size: 1.4em;
+      text-align: center;
+    }
+    h4.wallytxt{font-size: 4em;}
+  }
+  .tambien{ color:@w; .tac; font-size: 1.2em;   margin-bottom: 20px; margin-top: 20px;}
+
+}
+
+#instalaciones{
+  padding-bottom: 120px;
+  background:@mainl;
+  .wavehr{ #top{fill:@yellow/1.1;} #bottom{fill:@mainl;} }
+  p{color:@w; font-size: 1.2em; margin-top: 30px;}
+  .instagal{
+    @media @tablet, @mobile{
+      margin-top: 50px;
+    }
+    img{
+      width: 100%;
+    }
+    .slick-slide{
+      .box-sizing(border-box);
+      border:20px solid @sec;
+      .border-radius(50%);
+      overflow: hidden;
+      margin: 5px 80px;
+      @media @tablet{
+        margin:  0 5px 0 5px;
+      }
+      @media @mobile{
+        margin: 0 0 0 0;
+      }
+    }
+    .slick-arrow{
+      font-size: 0;
+      color:@yellow;
+      &.slick-prev:before{
+        content:"\f077";
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 80px;
+      }
+      &.slick-next:before{
+        content:"\f078";
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 80px;
+      }
+      &.slick-prev{
+        position: absolute;
+        top: -15px;
+        left:20%;
+        z-index: 5;
+        @media @tablet, @mobile{ top: -50px; }
+      }
+      &.slick-next{
+        position: absolute;
+        bottom: -5px;
+        right:20%;
+        z-index: 5;
+        @media @tablet, @mobile{ bottom: -40px; }
+      }
+    }
+  }
+}
+
+#contacto{
+  background:@main;
+  .wavehr{ #top{fill:@mainl/1.2;} #bottom{fill:@main;} }
+
+  .infocont{
+    .wallytxt{
+      .tac;
+      font-size: 1.4em;
+      margin-bottom: 20px;
+      margin-top: 40px;
+    }
+    .fb_wally{
+      width: 200px; height: 200px;
+      margin: 0 auto;
+      overflow: hidden;
+      .border-radius(50%);
+      img{
+        .fluid;
+      }
+    }
+    .linkfb{
+      display: block;
+      padding: 10px;
+      text-align: center;
+      color:@sec;
+      i{ color:@mainl; }
+    }
+  }
+  .phone{
+    .wallytxt{
+      margin-top: 0px;
+      margin-bottom: 0;
+      font-size: 2.5em;
+      color:@green;
+      &:first-child{
+        font-size: 3em;
+      }
+    }
+  }
+  .mail{
+    a{color:@green; &:hover{color:@yellow;}}
+    .tac;
+  }
+  form{
+    input, textarea{
+      width: 100%;
+      margin: 0 0 4px 0;
+      background: @w;
+      .font1;
+      .box-sizing(border-box);
+      padding: 4px 10px;
+      color:@main;
+      .border-radius(3px);
+    }
+  }
+  button{
+    border:none;
+    background: @cian;
+    color:@main;
+    width: 120px;
+    padding: 5px;
+    font-size: 1.2em;
+    .border-radius(3px);
+    cursor: pointer;
+    &:hover{
+      background: @sec;
+    }
+  }
+  .confirmacion{
+    .wallytxt{
+      color:@cian;
+    }
+  }
+}
+
+
+#swipebox-overlay, #swipebox-bottom-bar, #swipebox-top-bar{
+  .gradient;
+}
+
+/* ---- */
+
+@-webkit-keyframes floating{
+    0%{
+        .transform(translate(0px,0px));
+    }
+    50%{
+        .transform(translate(0px,4px));
+    }
+    100%{
+       .transform(translate(0px,0px));
+    }
+}
+.floating(@dur:2s) {
+  -webkit-animation-name: floating;
+  -webkit-animation-duration: @dur;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+}

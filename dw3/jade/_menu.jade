@@ -1,0 +1,25 @@
+mixin menu(attr)
+  nav&attributes(attr)
+    label(for="navigationCheckboxButton").navBtn.fa.fa-bars
+    input(type="checkbox", checked="false")#navigationCheckboxButton
+    ul
+      - each item in menuNav
+        - if(item[2]==null)
+          li
+            a(href="#{item[1]}")&attributes(item[3]) #{item[0]}
+            - each subitem in menuNav
+              - if(subitem[2] == item[1])
+                ul
+                  - each subitem in menuNav
+                    - if(subitem[2] == item[1])
+                      li
+                        a(href="#{subitem[1]}")&attributes(subitem[3]) #{subitem[0]}
+                        - each subitemB in menuNav
+                          - if(subitemB[2] == subitem[0])
+                            ul
+                              - each subitemB in menuNav
+                                - if(subitemB[2] == subitem[1])
+                                  li
+                                    a(href="#{subitemB[1]}")&attributes(subitemB[3]) #{subitemB[0]}
+                            - break
+                - break

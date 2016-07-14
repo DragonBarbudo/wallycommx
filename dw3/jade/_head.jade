@@ -1,0 +1,13 @@
+mixin head(title, keywords, description)
+  - if(!keywords){keywords=""}
+  - if(!description){description=""}
+  head
+    meta(charset="utf-8")
+    title=title
+    meta(name="keywords", content=keywords)
+    meta(name="description", content=description)
+    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+    link(rel="icon", type="image/png", href="favicon.png")
+    +stylesheets
+    if block
+      block

@@ -1,0 +1,7 @@
+mixin scripts
+  - each js in javascripts
+    script(src=js)
+    
+mixin stylesheets
+  - each styles in stylesheets
+    link(rel="stylesheet", href=styles)

@@ -1,168 +1,365 @@
-<!DOCTYPE html>
-<html lang="es">
-
-	<head>
-		<meta charset="utf-8" />
-		<title>Wally Natación y Fiestas Infantiles</title>
-		<meta name="description" content="Wally: Clases de natación, Aquatifiestas infantiles y Cursos de verano! Visítanos, estamos en la ciudad de México!" />
-		<meta name="keywords" content="natación, fiestas infantiles, alberca, curso de verano, ciudad de méxico, infantil, niños, clases de natación, salvavidas, wally" />
-		<link rel="shortcut icon" href="imgs/favicon.ico" />
-		<link rel="icon" type="image/ico" href="imgs/favicon.ico" />
-		<link style="text/css" href="css/style.css" rel="stylesheet" />
-		<link  href="http://fonts.googleapis.com/css?family=Carter+One:regular" rel="stylesheet" type="text/css" >
-		<script type="text/javascript" src="js/modernizr.js"></script>
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/easing.js"></script>
-		<script type="text/javascript" src="js/scrollTo.js"></script>
-		<script type="text/javascript" src="js/spritely.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function(){
-				index();
-			});
-		</script>
-	</head>
-
-	<body>
-	<!--
-	<div class="modal"></div>
-	<div class="modalik bignews">
-		<div class="clouse">x</div>
-		<article>
-			<img src="buenfin.png" alt="Buen Fín en Wally">
-		</article>
-	</div>
-	-->
-
-	<div id="seagull"><a target="_blank" href="http://www.facebook.com/pages/Wally-Nataci%C3%B3n-y-Fiestas-Infantiles/193276354114842"></a></div>
-
-
-
-	<div id="f">
-
-		<section id="full">
-			<header>
-
-				<div id="sun"><img src="imgs/sun.png" alt="Sol" /></div>
-				<div id="spaceman"><img src="imgs/astronaut.png" alt="Space Man" /></div>
-				<div id="mars"><img src="imgs/mars.png" alt="Marte" /></div>
-
-				<div class="clear"></div>
-
-				<div id="cloud"><img src="imgs/cloud01.png" alt="Nube" /></div>
-
-				<div id="cloud2"><img src="imgs/cloud02.png" alt="Otra nube" /></div>
-
-			</header>
-
-			<div class="clear"></div>
-
-			<nav>
-				<a href="graduaciones.html" title="Graduaciones!" id="graduaciones">
-					<img src="imgs/graduacionesTitle.png" alt="Graduaciones!" title="Graduaciones!" />
-				</a>
-
-				<a href="curso.html" title="Curso de verano!" id="curso">
-					<img src="imgs/cursodeverano.png" alt="Curso de verano!" title="Curso de verano!" />
-				</a>
-				<div class="clear"></div>
-				<a href="clases.html" title="Clases de natación" id="clases">
-					<img src="imgs/clasesdenatacion.png" alt="Clases de natación" title="Clases de natación"/>
-				</a>
-				<a href="fiestas.html" title="Salón de fiestas infantiles" id="fiestas">
-					<img src="imgs/salondefiestas.png" alt="Salón de fiestas infantiles" title="Salón de fiestas infantiles"/>
-				</a>
-
-			</nav>
-
-			<div class="clear"></div>
-
-			<section>
-					<div id="island">
-						<img src="imgs/island.png" alt="Isla" />
-					</div>
-
-					<div id="ark">
-						<img src="imgs/ark.png" alt="Arca crucero" width="280" height="203" />
-					</div>
-
-				<div class="clear"></div>
-
-				<div id="castle">
-					<img src="imgs/castle.png" alt="Castillo"  />
-				</div>
-				<h1>
-					<img src="imgs/wally.png" alt="Wally Natación y Fiestas Infantiles" title="Wally Natación y Fiestas Infantiles" />
-				</h1>
-
-				<div id="camera">
-					<img src="imgs/camera.png" alt="Camara y Tabla de Surf"  />
-				</div>
-
-			</section>
-
-			<div class="clear"></div>
-
-			<footer>
-				<nav>
-					<a href="#" title="Regístrate!" id="registrate">
-						<img src="imgs/registrate.png" alt="Regístrate!" />
-					</a>
-					<a href="#" title="Contáctanos!" id="contactanos">
-						<img src="imgs/contactanos.png" alt="Contáctanos!" />
-					</a>
-				</nav>
-			</footer>
-
-			<div  class="clear"></div>
-
-			<section id="underwater">
-				<div id="registroForm">
-					<form method="post" action="server/registrarse.html"> <h3>Ya casi... estamos construyendo esta sección =)</h3> 	</form>
-					<div id="minero"> <img src="imgs/minero.png" alt="minero" /> 	</div>
-				</div>
-				<div id="contactoForm">
-					<address>
-						<div>Llámanos!
-						<br />Estamos en la colonia Jardín Balbuena, V. Carranza, México D.F.</div>
-						<h3>55 52 - 75 88</h3>
-						<h4>57 68 - 97 98</h4>
-						<div>Mándanos un correo:</div>
-						<h4><a href="mailto:info@wally.com.mx">info@wally.com.mx</a></h4>
-						<div id="anguila"> <img src="imgs/anguila.png" alt="anguila" /> </div>
-					</address>
-					<form method="get" action="http://www.dragonbarbudo.com/api/email.php" id="formulary">
-						<input type="hidden" name="_to" value="info@wally.com.mx">
-						<input type="hidden" name="_from" value="info@wally.com.mx">
-						<input type="hidden" name="_subject" value="¡Mensaje nuevo!">
-						<input type="hidden" name="_redirect" value="http://wally.com.mx">
-						<label for="name">Nombre</label> 	<div class="error"></div>
-						<div class="input" id="nomi"><input type="text" id="name" name="Nombre" /></div>
-						<label for="mail">Correo electrónico</label> <div class="error"></div>
-						<div class="input"><input type="text" id="mail" name="Correo" /></div>
-						<label for="phone">Teléfono</label> <div class="error"></div>
-						<div class="input"><input type="text" id="phone" name="Tel" /></div>
-						<label for="mess">Mensaje</label> <div class="error"></div>
-						<div class="input"><input type="text" id="mess" name="Mensaje" /></div>
-						<input type="submit" value="" />
-					</form>
-				</div>
-				<script>
-					(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-					m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-					})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-					ga('create', 'UA-30012102-1', 'auto');
-					ga('send', 'pageview');
-				</script>
-			</section>
-
-
-
-		</section>
-
-	</div>
-
-	</body>
-
-</html>
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><title>Dw3</title><meta name="keywords" content="Dragon, barbudo, webeloper, Dragon Webeloper, Dragon webeloper 3"><meta name="description" content="Dragón Webeloper es un framework creado por dragonbarbudo.com para el desarrollo de sitios web empresariales."><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"><link rel="icon" type="image/png" href="favicon.png"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"><link rel="stylesheet" href="https://dbo.space/dw3/css/13"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Antic+Slab|Bangers"><link rel="stylesheet" href="app/css/app.css"></head><body ng-app="dw3"><nav class="horizontal fluid"><label for="navigationCheckboxButton" class="navBtn fa fa-bars"></label><input type="checkbox" checked="false" id="navigationCheckboxButton"><ul><li><a href="#about" du-smooth-scroll du-scrollspy>Wally</a></li><li><a href="#acuatifiestas" du-smooth-scroll du-scrollspy>Acuatifiestas</a></li><li><a href="#natacion" du-smooth-scroll du-scrollspy>Natación</a></li><li><a href="#curso-de-verano" du-smooth-scroll du-scrollspy>Curso de verano</a></li><li><a href="#instalaciones" du-smooth-scroll du-scrollspy>Instalaciones</a></li><li><a href="#contacto" du-smooth-scroll du-scrollspy>Contacto</a></li></ul></nav><div ng-controller="MainCtrl"><header id="wally" ng-class="headerClass" class="container fluid"><div class="c12 tac"><img src="app/img/wally.svg" alt="Wally Natación y Fiestas Infantiles" title="Wally Natación y Fiestas Infantiles" class="tooltip"></div><div class="waves"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1024px" height="96px" viewBox="0 0 1024 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
+    <title>waves</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="1023.81608 86.47065 1023.81608 0.667595946 0.238945221 0.667595946 0.238945221 86.47065"></polygon>
+        <polygon id="path-3" points="1023.81608 65.4987257 1023.81608 0.368468919 0.238945221 0.368468919 0.238945221 65.4987257"></polygon>
+        <polygon id="path-5" points="1023.81608 39.3239311 1023.81608 0.0939851351 0.238945221 0.0939851351 0.238945221 39.3239311"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="waves">
+            <g id="wave3" transform="translate(0.000000, 0.143796)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M-272.852975,0.667595946 C-215.829576,0.667595946 -164.301664,5.63687973 -127.430671,13.6393797 C-92.4218845,21.2368392 -54.2440806,21.2368392 -19.2370136,13.6393797 C17.633979,5.63687973 69.1618918,0.667595946 126.18529,0.667595946 C179.43613,0.667595946 227.896476,5.00113649 264.105465,12.0900014 C300.445136,19.2050824 339.616804,19.2050824 375.958194,12.0900014 C412.165464,5.00113649 460.625809,0.667595946 513.87665,0.667595946 C570.900048,0.667595946 622.427961,5.63687973 659.298953,13.6393797 C694.30602,21.2368392 732.485544,21.2368392 767.492611,13.6393797 C804.363603,5.63687973 855.891516,0.667595946 912.914914,0.667595946 C1025.02557,0.667595946 1115.90913,19.8749068 1115.90913,43.569123 L1115.90913,86.47065 L329.179509,86.47065 L310.884151,86.47065 L-475.845474,86.47065 L-475.845474,43.569123 C-475.845474,19.8749068 -384.963627,0.667595946 -272.852975,0.667595946" id="Fill-1" fill="#007E9C" mask="url(#mask-2)"></path>
+            </g>
+            <g id="wave2" transform="translate(0.000000, 21.116769)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Clip-5"></g>
+                <path d="M25.9857068,0.368468919 C75.5912314,0.368468919 120.414858,4.14098243 152.488478,10.2139689 C182.942339,15.9815365 216.152541,15.9815365 246.606402,10.2139689 C278.678302,4.14098243 323.503649,0.368468919 373.107454,0.368468919 C419.430475,0.368468919 461.587175,3.65729324 493.083047,9.03948243 C524.695844,14.440023 558.770948,14.440023 590.383744,9.03948243 C621.881335,3.65729324 664.036316,0.368468919 710.359337,0.368468919 C759.964862,0.368468919 804.788489,4.14098243 836.862109,10.2139689 C867.31425,15.9815365 900.526171,15.9815365 930.980033,10.2139689 C963.053652,4.14098243 1007.87728,0.368468919 1057.48108,0.368468919 C1155.00532,0.368468919 1234.06568,14.9486176 1234.06568,32.9329419 L1234.06568,65.4987257 L549.692048,65.4987257 L533.776463,65.4987257 L-150.597168,65.4987257 L-150.597168,32.9329419 C-150.597168,14.9486176 -71.5385243,0.368468919 25.9857068,0.368468919" id="Fill-4" fill="#56C2E7" mask="url(#mask-4)"></path>
+            </g>
+            <g id="wave1" transform="translate(0.000000, 56.508661)">
+                <mask id="mask-6" fill="white">
+                    <use xlink:href="#path-5"></use>
+                </mask>
+                <g id="Clip-8"></g>
+                <path d="M-142.12542,0.0939851351 C-92.5198953,0.0939851351 -47.6962683,2.36562027 -15.6226487,6.02409324 C14.8312127,9.4990527 48.0414142,9.4990527 78.4952756,6.02409324 C110.567176,2.36562027 155.392522,0.0939851351 204.996327,0.0939851351 C251.319348,0.0939851351 293.476049,2.07593108 324.97192,5.31625541 C356.584717,8.56968784 390.659821,8.56968784 422.272618,5.31625541 C453.770209,2.07593108 495.92519,0.0939851351 542.248211,0.0939851351 C591.853735,0.0939851351 636.677362,2.36562027 668.750982,6.02409324 C699.203124,9.49774189 732.415045,9.4990527 762.867187,6.02409324 C794.940806,2.36562027 839.766153,0.0939851351 889.369958,0.0939851351 C986.894189,0.0939851351 1065.95455,8.87641757 1065.95455,19.7089581 L1065.95455,39.3239311 L381.580922,39.3239311 L365.665336,39.3239311 L-318.708295,39.3239311 L-318.708295,19.7089581 C-318.708295,8.87641757 -239.649651,0.0939851351 -142.12542,0.0939851351" id="Fill-7" fill="#D0E9FA" mask="url(#mask-6)"></path>
+            </g>
+        </g>
+    </g>
+</svg></div><slick autoplay="true" arrows="false" dots="true" settings="slickConfig" class="fluid"><div><div class="mainTitle">ACUATIFIESTAS INFANTILES</div><div class="char right crab_a"><img src="app/img/char_crab.svg" class="fluid"></div><div class="char right crab_b"><img src="app/img/char_crab.svg" class="fluid"></div><div class="char left mermaid_a"><img src="app/img/char_mermaid.svg" class="fluid"></div></div><div><div class="mainTitle">CLASES DE NATACIÓN</div><div class="char right crab_a"><img src="app/img/char_crab.svg" class="fluid"></div><div class="char right crab_b"><img src="app/img/char_crab.svg" class="fluid"></div><div class="char left ray_a"><img src="app/img/char_ray.svg" class="fluid"></div></div><div><div class="mainTitle">CURSO DE VERANO</div><div class="char right crab_a"><img src="app/img/char_crab.svg" class="fluid"></div><div class="char right crab_b"><img src="app/img/char_crab.svg" class="fluid"></div><div class="char left octo_a"><img src="app/img/char_octopus.svg" class="fluid"></div></div></slick></header><section id="about"><div class="wavehr"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1024px" height="75px" viewBox="0 0 1024 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
+    <title>wavehr</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="1023.81608 65.4987257 1023.81608 0.368468919 0.238945221 0.368468919 0.238945221 65.4987257"></polygon>
+        <polygon id="path-3" points="1023.81608 39.3239311 1023.81608 0.0939851351 0.238945221 0.0939851351 0.238945221 39.3239311"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="wavehr">
+            <g id="t" transform="translate(0.000000, 0.116769)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-5"></g>
+                <path d="M25.9857068,0.368468919 C75.5912314,0.368468919 120.414858,4.14098243 152.488478,10.2139689 C182.942339,15.9815365 216.152541,15.9815365 246.606402,10.2139689 C278.678302,4.14098243 323.503649,0.368468919 373.107454,0.368468919 C419.430475,0.368468919 461.587175,3.65729324 493.083047,9.03948243 C524.695844,14.440023 558.770948,14.440023 590.383744,9.03948243 C621.881335,3.65729324 664.036316,0.368468919 710.359337,0.368468919 C759.964862,0.368468919 804.788489,4.14098243 836.862109,10.2139689 C867.31425,15.9815365 900.526171,15.9815365 930.980033,10.2139689 C963.053652,4.14098243 1007.87728,0.368468919 1057.48108,0.368468919 C1155.00532,0.368468919 1234.06568,14.9486176 1234.06568,32.9329419 L1234.06568,65.4987257 L549.692048,65.4987257 L533.776463,65.4987257 L-150.597168,65.4987257 L-150.597168,32.9329419 C-150.597168,14.9486176 -71.5385243,0.368468919 25.9857068,0.368468919" id="top" fill="#007E9C" mask="url(#mask-2)"></path>
+            </g>
+            <g id="b" transform="translate(0.000000, 35.508661)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Clip-8"></g>
+                <path d="M-142.12542,0.0939851351 C-92.5198953,0.0939851351 -47.6962683,2.36562027 -15.6226487,6.02409324 C14.8312127,9.4990527 48.0414142,9.4990527 78.4952756,6.02409324 C110.567176,2.36562027 155.392522,0.0939851351 204.996327,0.0939851351 C251.319348,0.0939851351 293.476049,2.07593108 324.97192,5.31625541 C356.584717,8.56968784 390.659821,8.56968784 422.272618,5.31625541 C453.770209,2.07593108 495.92519,0.0939851351 542.248211,0.0939851351 C591.853735,0.0939851351 636.677362,2.36562027 668.750982,6.02409324 C699.203124,9.49774189 732.415045,9.4990527 762.867187,6.02409324 C794.940806,2.36562027 839.766153,0.0939851351 889.369958,0.0939851351 C986.894189,0.0939851351 1065.95455,8.87641757 1065.95455,19.7089581 L1065.95455,39.3239311 L381.580922,39.3239311 L365.665336,39.3239311 L-318.708295,39.3239311 L-318.708295,19.7089581 C-318.708295,8.87641757 -239.649651,0.0939851351 -142.12542,0.0939851351" id="bottom" fill="#009BC0" mask="url(#mask-4)"></path>
+            </g>
+        </g>
+    </g>
+</svg></div><div class="container"><div class="c6 g cm10 om1"><h1>WALLY NATACIÓN Y FIESTAS INFANTILES</h1><p>Wally es una escuela de natación y salón de fiestas infantiles localizado en la colonia Jardín Balbuena, a un costado de la delegación Venustiano Carranza en el oriente de la Ciudad de México.</p><div class="initmap"><div class="where"><p>En la colonia</p><p><strong>Jardín Balbuena</strong></p><p>CDMX</p></div><div class="pin"></div></div></div><div class="c5 cm10 o1 g imgCircles"></div></div></section><section id="before"><div class="wavehr"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1024px" height="75px" viewBox="0 0 1024 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
+    <title>wavehr</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="1023.81608 65.4987257 1023.81608 0.368468919 0.238945221 0.368468919 0.238945221 65.4987257"></polygon>
+        <polygon id="path-3" points="1023.81608 39.3239311 1023.81608 0.0939851351 0.238945221 0.0939851351 0.238945221 39.3239311"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="wavehr">
+            <g id="t" transform="translate(0.000000, 0.116769)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-5"></g>
+                <path d="M25.9857068,0.368468919 C75.5912314,0.368468919 120.414858,4.14098243 152.488478,10.2139689 C182.942339,15.9815365 216.152541,15.9815365 246.606402,10.2139689 C278.678302,4.14098243 323.503649,0.368468919 373.107454,0.368468919 C419.430475,0.368468919 461.587175,3.65729324 493.083047,9.03948243 C524.695844,14.440023 558.770948,14.440023 590.383744,9.03948243 C621.881335,3.65729324 664.036316,0.368468919 710.359337,0.368468919 C759.964862,0.368468919 804.788489,4.14098243 836.862109,10.2139689 C867.31425,15.9815365 900.526171,15.9815365 930.980033,10.2139689 C963.053652,4.14098243 1007.87728,0.368468919 1057.48108,0.368468919 C1155.00532,0.368468919 1234.06568,14.9486176 1234.06568,32.9329419 L1234.06568,65.4987257 L549.692048,65.4987257 L533.776463,65.4987257 L-150.597168,65.4987257 L-150.597168,32.9329419 C-150.597168,14.9486176 -71.5385243,0.368468919 25.9857068,0.368468919" id="top" fill="#007E9C" mask="url(#mask-2)"></path>
+            </g>
+            <g id="b" transform="translate(0.000000, 35.508661)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Clip-8"></g>
+                <path d="M-142.12542,0.0939851351 C-92.5198953,0.0939851351 -47.6962683,2.36562027 -15.6226487,6.02409324 C14.8312127,9.4990527 48.0414142,9.4990527 78.4952756,6.02409324 C110.567176,2.36562027 155.392522,0.0939851351 204.996327,0.0939851351 C251.319348,0.0939851351 293.476049,2.07593108 324.97192,5.31625541 C356.584717,8.56968784 390.659821,8.56968784 422.272618,5.31625541 C453.770209,2.07593108 495.92519,0.0939851351 542.248211,0.0939851351 C591.853735,0.0939851351 636.677362,2.36562027 668.750982,6.02409324 C699.203124,9.49774189 732.415045,9.4990527 762.867187,6.02409324 C794.940806,2.36562027 839.766153,0.0939851351 889.369958,0.0939851351 C986.894189,0.0939851351 1065.95455,8.87641757 1065.95455,19.7089581 L1065.95455,39.3239311 L381.580922,39.3239311 L365.665336,39.3239311 L-318.708295,39.3239311 L-318.708295,19.7089581 C-318.708295,8.87641757 -239.649651,0.0939851351 -142.12542,0.0939851351" id="bottom" fill="#009BC0" mask="url(#mask-4)"></path>
+            </g>
+        </g>
+    </g>
+</svg></div><div class="container nom"><div class="c7"></div><div class="c5"><img src="app/img/char_boy.svg" class="boy"></div></div><div class="container"><div class="c5 g cm10 om1"><div class="minititle">Hace mucho tiempo...</div><p>Abrimos nuestras puertas por allá del año 1996 y desde entonces hemos tenido acuatifiestas infantiles, clases de natación, cursos de verano, graduaciones, cursos de páscua y más.</p></div><div class="c2 g nom"><img src="app/img/char_diver.svg" class="diver fluid"></div><div class="c5 g cm10 om1"><div class="minititle">Y ahora</div><p>Tenemos clases de natación para niños de edad preescolar, primaria y para jóvenes de 14 años. También celebramos cumpleaños, logros y festejos para niños de todas las edades, todos los días de lunes a domingo.</p></div></div></section><section id="acuatifiestas"><div class="wavehr"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1024px" height="75px" viewBox="0 0 1024 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
+    <title>wavehr</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="1023.81608 65.4987257 1023.81608 0.368468919 0.238945221 0.368468919 0.238945221 65.4987257"></polygon>
+        <polygon id="path-3" points="1023.81608 39.3239311 1023.81608 0.0939851351 0.238945221 0.0939851351 0.238945221 39.3239311"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="wavehr">
+            <g id="t" transform="translate(0.000000, 0.116769)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-5"></g>
+                <path d="M25.9857068,0.368468919 C75.5912314,0.368468919 120.414858,4.14098243 152.488478,10.2139689 C182.942339,15.9815365 216.152541,15.9815365 246.606402,10.2139689 C278.678302,4.14098243 323.503649,0.368468919 373.107454,0.368468919 C419.430475,0.368468919 461.587175,3.65729324 493.083047,9.03948243 C524.695844,14.440023 558.770948,14.440023 590.383744,9.03948243 C621.881335,3.65729324 664.036316,0.368468919 710.359337,0.368468919 C759.964862,0.368468919 804.788489,4.14098243 836.862109,10.2139689 C867.31425,15.9815365 900.526171,15.9815365 930.980033,10.2139689 C963.053652,4.14098243 1007.87728,0.368468919 1057.48108,0.368468919 C1155.00532,0.368468919 1234.06568,14.9486176 1234.06568,32.9329419 L1234.06568,65.4987257 L549.692048,65.4987257 L533.776463,65.4987257 L-150.597168,65.4987257 L-150.597168,32.9329419 C-150.597168,14.9486176 -71.5385243,0.368468919 25.9857068,0.368468919" id="top" fill="#007E9C" mask="url(#mask-2)"></path>
+            </g>
+            <g id="b" transform="translate(0.000000, 35.508661)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Clip-8"></g>
+                <path d="M-142.12542,0.0939851351 C-92.5198953,0.0939851351 -47.6962683,2.36562027 -15.6226487,6.02409324 C14.8312127,9.4990527 48.0414142,9.4990527 78.4952756,6.02409324 C110.567176,2.36562027 155.392522,0.0939851351 204.996327,0.0939851351 C251.319348,0.0939851351 293.476049,2.07593108 324.97192,5.31625541 C356.584717,8.56968784 390.659821,8.56968784 422.272618,5.31625541 C453.770209,2.07593108 495.92519,0.0939851351 542.248211,0.0939851351 C591.853735,0.0939851351 636.677362,2.36562027 668.750982,6.02409324 C699.203124,9.49774189 732.415045,9.4990527 762.867187,6.02409324 C794.940806,2.36562027 839.766153,0.0939851351 889.369958,0.0939851351 C986.894189,0.0939851351 1065.95455,8.87641757 1065.95455,19.7089581 L1065.95455,39.3239311 L381.580922,39.3239311 L365.665336,39.3239311 L-318.708295,39.3239311 L-318.708295,19.7089581 C-318.708295,8.87641757 -239.649651,0.0939851351 -142.12542,0.0939851351" id="bottom" fill="#009BC0" mask="url(#mask-4)"></path>
+            </g>
+        </g>
+    </g>
+</svg></div><div class="waves"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1024px" height="96px" viewBox="0 0 1024 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
+    <title>waves</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="1023.81608 86.47065 1023.81608 0.667595946 0.238945221 0.667595946 0.238945221 86.47065"></polygon>
+        <polygon id="path-3" points="1023.81608 65.4987257 1023.81608 0.368468919 0.238945221 0.368468919 0.238945221 65.4987257"></polygon>
+        <polygon id="path-5" points="1023.81608 39.3239311 1023.81608 0.0939851351 0.238945221 0.0939851351 0.238945221 39.3239311"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="waves">
+            <g id="wave3" transform="translate(0.000000, 0.143796)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M-272.852975,0.667595946 C-215.829576,0.667595946 -164.301664,5.63687973 -127.430671,13.6393797 C-92.4218845,21.2368392 -54.2440806,21.2368392 -19.2370136,13.6393797 C17.633979,5.63687973 69.1618918,0.667595946 126.18529,0.667595946 C179.43613,0.667595946 227.896476,5.00113649 264.105465,12.0900014 C300.445136,19.2050824 339.616804,19.2050824 375.958194,12.0900014 C412.165464,5.00113649 460.625809,0.667595946 513.87665,0.667595946 C570.900048,0.667595946 622.427961,5.63687973 659.298953,13.6393797 C694.30602,21.2368392 732.485544,21.2368392 767.492611,13.6393797 C804.363603,5.63687973 855.891516,0.667595946 912.914914,0.667595946 C1025.02557,0.667595946 1115.90913,19.8749068 1115.90913,43.569123 L1115.90913,86.47065 L329.179509,86.47065 L310.884151,86.47065 L-475.845474,86.47065 L-475.845474,43.569123 C-475.845474,19.8749068 -384.963627,0.667595946 -272.852975,0.667595946" id="Fill-1" fill="#007E9C" mask="url(#mask-2)"></path>
+            </g>
+            <g id="wave2" transform="translate(0.000000, 21.116769)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Clip-5"></g>
+                <path d="M25.9857068,0.368468919 C75.5912314,0.368468919 120.414858,4.14098243 152.488478,10.2139689 C182.942339,15.9815365 216.152541,15.9815365 246.606402,10.2139689 C278.678302,4.14098243 323.503649,0.368468919 373.107454,0.368468919 C419.430475,0.368468919 461.587175,3.65729324 493.083047,9.03948243 C524.695844,14.440023 558.770948,14.440023 590.383744,9.03948243 C621.881335,3.65729324 664.036316,0.368468919 710.359337,0.368468919 C759.964862,0.368468919 804.788489,4.14098243 836.862109,10.2139689 C867.31425,15.9815365 900.526171,15.9815365 930.980033,10.2139689 C963.053652,4.14098243 1007.87728,0.368468919 1057.48108,0.368468919 C1155.00532,0.368468919 1234.06568,14.9486176 1234.06568,32.9329419 L1234.06568,65.4987257 L549.692048,65.4987257 L533.776463,65.4987257 L-150.597168,65.4987257 L-150.597168,32.9329419 C-150.597168,14.9486176 -71.5385243,0.368468919 25.9857068,0.368468919" id="Fill-4" fill="#56C2E7" mask="url(#mask-4)"></path>
+            </g>
+            <g id="wave1" transform="translate(0.000000, 56.508661)">
+                <mask id="mask-6" fill="white">
+                    <use xlink:href="#path-5"></use>
+                </mask>
+                <g id="Clip-8"></g>
+                <path d="M-142.12542,0.0939851351 C-92.5198953,0.0939851351 -47.6962683,2.36562027 -15.6226487,6.02409324 C14.8312127,9.4990527 48.0414142,9.4990527 78.4952756,6.02409324 C110.567176,2.36562027 155.392522,0.0939851351 204.996327,0.0939851351 C251.319348,0.0939851351 293.476049,2.07593108 324.97192,5.31625541 C356.584717,8.56968784 390.659821,8.56968784 422.272618,5.31625541 C453.770209,2.07593108 495.92519,0.0939851351 542.248211,0.0939851351 C591.853735,0.0939851351 636.677362,2.36562027 668.750982,6.02409324 C699.203124,9.49774189 732.415045,9.4990527 762.867187,6.02409324 C794.940806,2.36562027 839.766153,0.0939851351 889.369958,0.0939851351 C986.894189,0.0939851351 1065.95455,8.87641757 1065.95455,19.7089581 L1065.95455,39.3239311 L381.580922,39.3239311 L365.665336,39.3239311 L-318.708295,39.3239311 L-318.708295,19.7089581 C-318.708295,8.87641757 -239.649651,0.0939851351 -142.12542,0.0939851351" id="Fill-7" fill="#D0E9FA" mask="url(#mask-6)"></path>
+            </g>
+        </g>
+    </g>
+</svg></div><div class="container"><div class="c12 tac cm10 om1"><h3 class="wallytxt">ACUATIFIESTAS INFANTILES</h3></div></div><div class="container"><div class="c6 g cm10 om1"><p>Nuestras acuatifiestas estan llenas de diversión, ya que además de la super alberca también contamos con área de juegos infantiles y todo un salón para que te festejen tu fiesta.</p></div><div class="c5 o1 tar nom"><img src="app/img/char_mermaid.svg" alt="Acuatifiestas infantiles"></div></div><div class="container paquetes"><div class="c4 g cm10 om1"><h4 class="wallytxt">Paquetes para fiestas</h4></div><div class="c4 g cm10 om1"><div class="paq"><div class="paqtitle">60 personas</div><div class="time">4.5 hrs de servicio</div><ul><li>2.5 hrs de alberca</li><li>Guardavidas</li><li>Mesas y sillas</li><li>Manteles</li><li>Música</li><li>Área de juegos</li></ul><!--.extra Persona extra: strong $105--></div></div><div class="c4 g cm10 om1"><div class="paq"><div class="paqtitle">100 personas</div><div class="time">5 hrs de servicio</div><ul><li>3 hrs de alberca</li><li>Guardavidas</li><li>Mesas y sillas</li><li>Manteles</li><li>Música</li><li>Área de juegos</li></ul><!--.extra Persona extra: strong $80--></div></div></div><div class="container tambien"><div class="c8 o2">También contamos con servicio de alimentos, dulcería, artículos para natación y taller de pintura (figuras de cerámica).</div></div></section><section id="natacion"><div class="wavehr"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1024px" height="75px" viewBox="0 0 1024 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
+    <title>wavehr</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="1023.81608 65.4987257 1023.81608 0.368468919 0.238945221 0.368468919 0.238945221 65.4987257"></polygon>
+        <polygon id="path-3" points="1023.81608 39.3239311 1023.81608 0.0939851351 0.238945221 0.0939851351 0.238945221 39.3239311"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="wavehr">
+            <g id="t" transform="translate(0.000000, 0.116769)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-5"></g>
+                <path d="M25.9857068,0.368468919 C75.5912314,0.368468919 120.414858,4.14098243 152.488478,10.2139689 C182.942339,15.9815365 216.152541,15.9815365 246.606402,10.2139689 C278.678302,4.14098243 323.503649,0.368468919 373.107454,0.368468919 C419.430475,0.368468919 461.587175,3.65729324 493.083047,9.03948243 C524.695844,14.440023 558.770948,14.440023 590.383744,9.03948243 C621.881335,3.65729324 664.036316,0.368468919 710.359337,0.368468919 C759.964862,0.368468919 804.788489,4.14098243 836.862109,10.2139689 C867.31425,15.9815365 900.526171,15.9815365 930.980033,10.2139689 C963.053652,4.14098243 1007.87728,0.368468919 1057.48108,0.368468919 C1155.00532,0.368468919 1234.06568,14.9486176 1234.06568,32.9329419 L1234.06568,65.4987257 L549.692048,65.4987257 L533.776463,65.4987257 L-150.597168,65.4987257 L-150.597168,32.9329419 C-150.597168,14.9486176 -71.5385243,0.368468919 25.9857068,0.368468919" id="top" fill="#007E9C" mask="url(#mask-2)"></path>
+            </g>
+            <g id="b" transform="translate(0.000000, 35.508661)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Clip-8"></g>
+                <path d="M-142.12542,0.0939851351 C-92.5198953,0.0939851351 -47.6962683,2.36562027 -15.6226487,6.02409324 C14.8312127,9.4990527 48.0414142,9.4990527 78.4952756,6.02409324 C110.567176,2.36562027 155.392522,0.0939851351 204.996327,0.0939851351 C251.319348,0.0939851351 293.476049,2.07593108 324.97192,5.31625541 C356.584717,8.56968784 390.659821,8.56968784 422.272618,5.31625541 C453.770209,2.07593108 495.92519,0.0939851351 542.248211,0.0939851351 C591.853735,0.0939851351 636.677362,2.36562027 668.750982,6.02409324 C699.203124,9.49774189 732.415045,9.4990527 762.867187,6.02409324 C794.940806,2.36562027 839.766153,0.0939851351 889.369958,0.0939851351 C986.894189,0.0939851351 1065.95455,8.87641757 1065.95455,19.7089581 L1065.95455,39.3239311 L381.580922,39.3239311 L365.665336,39.3239311 L-318.708295,39.3239311 L-318.708295,19.7089581 C-318.708295,8.87641757 -239.649651,0.0939851351 -142.12542,0.0939851351" id="bottom" fill="#009BC0" mask="url(#mask-4)"></path>
+            </g>
+        </g>
+    </g>
+</svg></div><div class="waves"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1024px" height="96px" viewBox="0 0 1024 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
+    <title>waves</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="1023.81608 86.47065 1023.81608 0.667595946 0.238945221 0.667595946 0.238945221 86.47065"></polygon>
+        <polygon id="path-3" points="1023.81608 65.4987257 1023.81608 0.368468919 0.238945221 0.368468919 0.238945221 65.4987257"></polygon>
+        <polygon id="path-5" points="1023.81608 39.3239311 1023.81608 0.0939851351 0.238945221 0.0939851351 0.238945221 39.3239311"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="waves">
+            <g id="wave3" transform="translate(0.000000, 0.143796)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M-272.852975,0.667595946 C-215.829576,0.667595946 -164.301664,5.63687973 -127.430671,13.6393797 C-92.4218845,21.2368392 -54.2440806,21.2368392 -19.2370136,13.6393797 C17.633979,5.63687973 69.1618918,0.667595946 126.18529,0.667595946 C179.43613,0.667595946 227.896476,5.00113649 264.105465,12.0900014 C300.445136,19.2050824 339.616804,19.2050824 375.958194,12.0900014 C412.165464,5.00113649 460.625809,0.667595946 513.87665,0.667595946 C570.900048,0.667595946 622.427961,5.63687973 659.298953,13.6393797 C694.30602,21.2368392 732.485544,21.2368392 767.492611,13.6393797 C804.363603,5.63687973 855.891516,0.667595946 912.914914,0.667595946 C1025.02557,0.667595946 1115.90913,19.8749068 1115.90913,43.569123 L1115.90913,86.47065 L329.179509,86.47065 L310.884151,86.47065 L-475.845474,86.47065 L-475.845474,43.569123 C-475.845474,19.8749068 -384.963627,0.667595946 -272.852975,0.667595946" id="Fill-1" fill="#007E9C" mask="url(#mask-2)"></path>
+            </g>
+            <g id="wave2" transform="translate(0.000000, 21.116769)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Clip-5"></g>
+                <path d="M25.9857068,0.368468919 C75.5912314,0.368468919 120.414858,4.14098243 152.488478,10.2139689 C182.942339,15.9815365 216.152541,15.9815365 246.606402,10.2139689 C278.678302,4.14098243 323.503649,0.368468919 373.107454,0.368468919 C419.430475,0.368468919 461.587175,3.65729324 493.083047,9.03948243 C524.695844,14.440023 558.770948,14.440023 590.383744,9.03948243 C621.881335,3.65729324 664.036316,0.368468919 710.359337,0.368468919 C759.964862,0.368468919 804.788489,4.14098243 836.862109,10.2139689 C867.31425,15.9815365 900.526171,15.9815365 930.980033,10.2139689 C963.053652,4.14098243 1007.87728,0.368468919 1057.48108,0.368468919 C1155.00532,0.368468919 1234.06568,14.9486176 1234.06568,32.9329419 L1234.06568,65.4987257 L549.692048,65.4987257 L533.776463,65.4987257 L-150.597168,65.4987257 L-150.597168,32.9329419 C-150.597168,14.9486176 -71.5385243,0.368468919 25.9857068,0.368468919" id="Fill-4" fill="#56C2E7" mask="url(#mask-4)"></path>
+            </g>
+            <g id="wave1" transform="translate(0.000000, 56.508661)">
+                <mask id="mask-6" fill="white">
+                    <use xlink:href="#path-5"></use>
+                </mask>
+                <g id="Clip-8"></g>
+                <path d="M-142.12542,0.0939851351 C-92.5198953,0.0939851351 -47.6962683,2.36562027 -15.6226487,6.02409324 C14.8312127,9.4990527 48.0414142,9.4990527 78.4952756,6.02409324 C110.567176,2.36562027 155.392522,0.0939851351 204.996327,0.0939851351 C251.319348,0.0939851351 293.476049,2.07593108 324.97192,5.31625541 C356.584717,8.56968784 390.659821,8.56968784 422.272618,5.31625541 C453.770209,2.07593108 495.92519,0.0939851351 542.248211,0.0939851351 C591.853735,0.0939851351 636.677362,2.36562027 668.750982,6.02409324 C699.203124,9.49774189 732.415045,9.4990527 762.867187,6.02409324 C794.940806,2.36562027 839.766153,0.0939851351 889.369958,0.0939851351 C986.894189,0.0939851351 1065.95455,8.87641757 1065.95455,19.7089581 L1065.95455,39.3239311 L381.580922,39.3239311 L365.665336,39.3239311 L-318.708295,39.3239311 L-318.708295,19.7089581 C-318.708295,8.87641757 -239.649651,0.0939851351 -142.12542,0.0939851351" id="Fill-7" fill="#D0E9FA" mask="url(#mask-6)"></path>
+            </g>
+        </g>
+    </g>
+</svg></div><div class="container"><div class="c12 tac cm10 om1"><h3 class="wallytxt">CLASES DE NATACIÓN</h3></div></div><div class="container"><div class="c6 g cm10 om1"><p>Saber nadar es superimportante, por eso te invitamos a que aprendas con nosotros y nuestros maestros quienes estan listos para convertirte en todo un delfín.</p></div><div class="c5 o1 tar nom"><img src="app/img/char_ray.svg" alt="Clases de natación"></div></div><div class="container"><div class="c4 o1 g cm10 om1"><h4 class="wallytxt">Ven a nadar 1, 2 o 3 veces a la semana.</h4></div><div class="c4 o1 g cm10 om1"><h4 class="wallytxt">Elige entre Martes, Jueves y Viernes.</h4></div></div><div class="container tambien"><div class="c8 o2">Sólo necesitas traer tu <strong>traje de baño</strong>, <strong>toalla</strong> y <strong>gorra</strong>, nosotros te prestamos lo demás.</div></div></section><section id="curso-de-verano"><div class="wavehr"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1024px" height="75px" viewBox="0 0 1024 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
+    <title>wavehr</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="1023.81608 65.4987257 1023.81608 0.368468919 0.238945221 0.368468919 0.238945221 65.4987257"></polygon>
+        <polygon id="path-3" points="1023.81608 39.3239311 1023.81608 0.0939851351 0.238945221 0.0939851351 0.238945221 39.3239311"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="wavehr">
+            <g id="t" transform="translate(0.000000, 0.116769)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-5"></g>
+                <path d="M25.9857068,0.368468919 C75.5912314,0.368468919 120.414858,4.14098243 152.488478,10.2139689 C182.942339,15.9815365 216.152541,15.9815365 246.606402,10.2139689 C278.678302,4.14098243 323.503649,0.368468919 373.107454,0.368468919 C419.430475,0.368468919 461.587175,3.65729324 493.083047,9.03948243 C524.695844,14.440023 558.770948,14.440023 590.383744,9.03948243 C621.881335,3.65729324 664.036316,0.368468919 710.359337,0.368468919 C759.964862,0.368468919 804.788489,4.14098243 836.862109,10.2139689 C867.31425,15.9815365 900.526171,15.9815365 930.980033,10.2139689 C963.053652,4.14098243 1007.87728,0.368468919 1057.48108,0.368468919 C1155.00532,0.368468919 1234.06568,14.9486176 1234.06568,32.9329419 L1234.06568,65.4987257 L549.692048,65.4987257 L533.776463,65.4987257 L-150.597168,65.4987257 L-150.597168,32.9329419 C-150.597168,14.9486176 -71.5385243,0.368468919 25.9857068,0.368468919" id="top" fill="#007E9C" mask="url(#mask-2)"></path>
+            </g>
+            <g id="b" transform="translate(0.000000, 35.508661)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Clip-8"></g>
+                <path d="M-142.12542,0.0939851351 C-92.5198953,0.0939851351 -47.6962683,2.36562027 -15.6226487,6.02409324 C14.8312127,9.4990527 48.0414142,9.4990527 78.4952756,6.02409324 C110.567176,2.36562027 155.392522,0.0939851351 204.996327,0.0939851351 C251.319348,0.0939851351 293.476049,2.07593108 324.97192,5.31625541 C356.584717,8.56968784 390.659821,8.56968784 422.272618,5.31625541 C453.770209,2.07593108 495.92519,0.0939851351 542.248211,0.0939851351 C591.853735,0.0939851351 636.677362,2.36562027 668.750982,6.02409324 C699.203124,9.49774189 732.415045,9.4990527 762.867187,6.02409324 C794.940806,2.36562027 839.766153,0.0939851351 889.369958,0.0939851351 C986.894189,0.0939851351 1065.95455,8.87641757 1065.95455,19.7089581 L1065.95455,39.3239311 L381.580922,39.3239311 L365.665336,39.3239311 L-318.708295,39.3239311 L-318.708295,19.7089581 C-318.708295,8.87641757 -239.649651,0.0939851351 -142.12542,0.0939851351" id="bottom" fill="#009BC0" mask="url(#mask-4)"></path>
+            </g>
+        </g>
+    </g>
+</svg></div><div class="waves"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1024px" height="96px" viewBox="0 0 1024 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
+    <title>waves</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="1023.81608 86.47065 1023.81608 0.667595946 0.238945221 0.667595946 0.238945221 86.47065"></polygon>
+        <polygon id="path-3" points="1023.81608 65.4987257 1023.81608 0.368468919 0.238945221 0.368468919 0.238945221 65.4987257"></polygon>
+        <polygon id="path-5" points="1023.81608 39.3239311 1023.81608 0.0939851351 0.238945221 0.0939851351 0.238945221 39.3239311"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="waves">
+            <g id="wave3" transform="translate(0.000000, 0.143796)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M-272.852975,0.667595946 C-215.829576,0.667595946 -164.301664,5.63687973 -127.430671,13.6393797 C-92.4218845,21.2368392 -54.2440806,21.2368392 -19.2370136,13.6393797 C17.633979,5.63687973 69.1618918,0.667595946 126.18529,0.667595946 C179.43613,0.667595946 227.896476,5.00113649 264.105465,12.0900014 C300.445136,19.2050824 339.616804,19.2050824 375.958194,12.0900014 C412.165464,5.00113649 460.625809,0.667595946 513.87665,0.667595946 C570.900048,0.667595946 622.427961,5.63687973 659.298953,13.6393797 C694.30602,21.2368392 732.485544,21.2368392 767.492611,13.6393797 C804.363603,5.63687973 855.891516,0.667595946 912.914914,0.667595946 C1025.02557,0.667595946 1115.90913,19.8749068 1115.90913,43.569123 L1115.90913,86.47065 L329.179509,86.47065 L310.884151,86.47065 L-475.845474,86.47065 L-475.845474,43.569123 C-475.845474,19.8749068 -384.963627,0.667595946 -272.852975,0.667595946" id="Fill-1" fill="#007E9C" mask="url(#mask-2)"></path>
+            </g>
+            <g id="wave2" transform="translate(0.000000, 21.116769)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Clip-5"></g>
+                <path d="M25.9857068,0.368468919 C75.5912314,0.368468919 120.414858,4.14098243 152.488478,10.2139689 C182.942339,15.9815365 216.152541,15.9815365 246.606402,10.2139689 C278.678302,4.14098243 323.503649,0.368468919 373.107454,0.368468919 C419.430475,0.368468919 461.587175,3.65729324 493.083047,9.03948243 C524.695844,14.440023 558.770948,14.440023 590.383744,9.03948243 C621.881335,3.65729324 664.036316,0.368468919 710.359337,0.368468919 C759.964862,0.368468919 804.788489,4.14098243 836.862109,10.2139689 C867.31425,15.9815365 900.526171,15.9815365 930.980033,10.2139689 C963.053652,4.14098243 1007.87728,0.368468919 1057.48108,0.368468919 C1155.00532,0.368468919 1234.06568,14.9486176 1234.06568,32.9329419 L1234.06568,65.4987257 L549.692048,65.4987257 L533.776463,65.4987257 L-150.597168,65.4987257 L-150.597168,32.9329419 C-150.597168,14.9486176 -71.5385243,0.368468919 25.9857068,0.368468919" id="Fill-4" fill="#56C2E7" mask="url(#mask-4)"></path>
+            </g>
+            <g id="wave1" transform="translate(0.000000, 56.508661)">
+                <mask id="mask-6" fill="white">
+                    <use xlink:href="#path-5"></use>
+                </mask>
+                <g id="Clip-8"></g>
+                <path d="M-142.12542,0.0939851351 C-92.5198953,0.0939851351 -47.6962683,2.36562027 -15.6226487,6.02409324 C14.8312127,9.4990527 48.0414142,9.4990527 78.4952756,6.02409324 C110.567176,2.36562027 155.392522,0.0939851351 204.996327,0.0939851351 C251.319348,0.0939851351 293.476049,2.07593108 324.97192,5.31625541 C356.584717,8.56968784 390.659821,8.56968784 422.272618,5.31625541 C453.770209,2.07593108 495.92519,0.0939851351 542.248211,0.0939851351 C591.853735,0.0939851351 636.677362,2.36562027 668.750982,6.02409324 C699.203124,9.49774189 732.415045,9.4990527 762.867187,6.02409324 C794.940806,2.36562027 839.766153,0.0939851351 889.369958,0.0939851351 C986.894189,0.0939851351 1065.95455,8.87641757 1065.95455,19.7089581 L1065.95455,39.3239311 L381.580922,39.3239311 L365.665336,39.3239311 L-318.708295,39.3239311 L-318.708295,19.7089581 C-318.708295,8.87641757 -239.649651,0.0939851351 -142.12542,0.0939851351" id="Fill-7" fill="#D0E9FA" mask="url(#mask-6)"></path>
+            </g>
+        </g>
+    </g>
+</svg></div><div class="container"><div class="c12 tac cm10 om1"><h3 class="wallytxt">CURSO DE VERANO</h3></div></div><div class="container"><div class="c6 g cm10 om1"><p>No te aburras en tu casa, ven a nadar a Wally en tus vacaciones de verano y diviértete echándote chapuzones. Y si no sabes nadar muy bien, no te preocupes, también te daremos clases de natación.</p></div><div class="c5 o1 tar nom"><img src="app/img/char_octopus.svg" alt="Curso de verano"></div></div><div class="container tac nextcurso"><div class="c8 o2 g cm10 om1"><div class="wallytxt">Nuestro próximo curso de verano inicia</div><h4 class="wallytxt">el 20 de Julio de 2016</h4></div></div><div class="container tambien"><div class="c8 o2">Comunícate con nosotros y entérate de lo que haremos en estas vacaciones.</div></div></section><section id="instalaciones"><div class="wavehr"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1024px" height="75px" viewBox="0 0 1024 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
+    <title>wavehr</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="1023.81608 65.4987257 1023.81608 0.368468919 0.238945221 0.368468919 0.238945221 65.4987257"></polygon>
+        <polygon id="path-3" points="1023.81608 39.3239311 1023.81608 0.0939851351 0.238945221 0.0939851351 0.238945221 39.3239311"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="wavehr">
+            <g id="t" transform="translate(0.000000, 0.116769)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-5"></g>
+                <path d="M25.9857068,0.368468919 C75.5912314,0.368468919 120.414858,4.14098243 152.488478,10.2139689 C182.942339,15.9815365 216.152541,15.9815365 246.606402,10.2139689 C278.678302,4.14098243 323.503649,0.368468919 373.107454,0.368468919 C419.430475,0.368468919 461.587175,3.65729324 493.083047,9.03948243 C524.695844,14.440023 558.770948,14.440023 590.383744,9.03948243 C621.881335,3.65729324 664.036316,0.368468919 710.359337,0.368468919 C759.964862,0.368468919 804.788489,4.14098243 836.862109,10.2139689 C867.31425,15.9815365 900.526171,15.9815365 930.980033,10.2139689 C963.053652,4.14098243 1007.87728,0.368468919 1057.48108,0.368468919 C1155.00532,0.368468919 1234.06568,14.9486176 1234.06568,32.9329419 L1234.06568,65.4987257 L549.692048,65.4987257 L533.776463,65.4987257 L-150.597168,65.4987257 L-150.597168,32.9329419 C-150.597168,14.9486176 -71.5385243,0.368468919 25.9857068,0.368468919" id="top" fill="#007E9C" mask="url(#mask-2)"></path>
+            </g>
+            <g id="b" transform="translate(0.000000, 35.508661)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Clip-8"></g>
+                <path d="M-142.12542,0.0939851351 C-92.5198953,0.0939851351 -47.6962683,2.36562027 -15.6226487,6.02409324 C14.8312127,9.4990527 48.0414142,9.4990527 78.4952756,6.02409324 C110.567176,2.36562027 155.392522,0.0939851351 204.996327,0.0939851351 C251.319348,0.0939851351 293.476049,2.07593108 324.97192,5.31625541 C356.584717,8.56968784 390.659821,8.56968784 422.272618,5.31625541 C453.770209,2.07593108 495.92519,0.0939851351 542.248211,0.0939851351 C591.853735,0.0939851351 636.677362,2.36562027 668.750982,6.02409324 C699.203124,9.49774189 732.415045,9.4990527 762.867187,6.02409324 C794.940806,2.36562027 839.766153,0.0939851351 889.369958,0.0939851351 C986.894189,0.0939851351 1065.95455,8.87641757 1065.95455,19.7089581 L1065.95455,39.3239311 L381.580922,39.3239311 L365.665336,39.3239311 L-318.708295,39.3239311 L-318.708295,19.7089581 C-318.708295,8.87641757 -239.649651,0.0939851351 -142.12542,0.0939851351" id="bottom" fill="#009BC0" mask="url(#mask-4)"></path>
+            </g>
+        </g>
+    </g>
+</svg></div><div class="container"><div class="c12 tac cm10 om1"><h3 class="wallytxt">NUESTRAS INSTALACIONES</h3></div></div><div class="container"><div class="c6 g cm10 om1"><p>Tenemos una alberca totalmente techada y en óptimas condiciones que aseguran comodidad e higiene. Contamos con sistemas de filtrado y mantenemos el agua tibia para que no tengas que preocuparte por la salud de tus pequeños. </p><p>El salón de fiestas es un espacio cómodo y acogedor donde tu familia y amigos disfrutarán de una linda experiencia. También contamos con área de juegos, una mesa de aire y un futbolito para que todos se diviertan al máximo.</p></div><div class="c5 o1 tar cm10 om1"><slick autoplay="true" vertical="true" class="instagal"><ng-swipebox photos="[{src:'app/img/gal/f1.jpg', href:'app/img/gal/f1.jpg'}, {src:'app/img/gal/f2.jpg', href:'app/img/gal/f2.jpg'}, {src:'app/img/gal/f3.jpg', href:'app/img/gal/f3.jpg'}, {src:'app/img/gal/f4.jpg', href:'app/img/gal/f4.jpg'}, {src:'app/img/gal/f5.jpg', href:'app/img/gal/f5.jpg'}, {src:'app/img/gal/f6.jpg', href:'app/img/gal/f6.jpg'}, {src:'app/img/gal/f7.jpg', href:'app/img/gal/f7.jpg'}]">     </ng-swipebox></slick></div></div></section><section id="contacto"><div class="wavehr"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1024px" height="75px" viewBox="0 0 1024 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
+    <title>wavehr</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="1023.81608 65.4987257 1023.81608 0.368468919 0.238945221 0.368468919 0.238945221 65.4987257"></polygon>
+        <polygon id="path-3" points="1023.81608 39.3239311 1023.81608 0.0939851351 0.238945221 0.0939851351 0.238945221 39.3239311"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="wavehr">
+            <g id="t" transform="translate(0.000000, 0.116769)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-5"></g>
+                <path d="M25.9857068,0.368468919 C75.5912314,0.368468919 120.414858,4.14098243 152.488478,10.2139689 C182.942339,15.9815365 216.152541,15.9815365 246.606402,10.2139689 C278.678302,4.14098243 323.503649,0.368468919 373.107454,0.368468919 C419.430475,0.368468919 461.587175,3.65729324 493.083047,9.03948243 C524.695844,14.440023 558.770948,14.440023 590.383744,9.03948243 C621.881335,3.65729324 664.036316,0.368468919 710.359337,0.368468919 C759.964862,0.368468919 804.788489,4.14098243 836.862109,10.2139689 C867.31425,15.9815365 900.526171,15.9815365 930.980033,10.2139689 C963.053652,4.14098243 1007.87728,0.368468919 1057.48108,0.368468919 C1155.00532,0.368468919 1234.06568,14.9486176 1234.06568,32.9329419 L1234.06568,65.4987257 L549.692048,65.4987257 L533.776463,65.4987257 L-150.597168,65.4987257 L-150.597168,32.9329419 C-150.597168,14.9486176 -71.5385243,0.368468919 25.9857068,0.368468919" id="top" fill="#007E9C" mask="url(#mask-2)"></path>
+            </g>
+            <g id="b" transform="translate(0.000000, 35.508661)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Clip-8"></g>
+                <path d="M-142.12542,0.0939851351 C-92.5198953,0.0939851351 -47.6962683,2.36562027 -15.6226487,6.02409324 C14.8312127,9.4990527 48.0414142,9.4990527 78.4952756,6.02409324 C110.567176,2.36562027 155.392522,0.0939851351 204.996327,0.0939851351 C251.319348,0.0939851351 293.476049,2.07593108 324.97192,5.31625541 C356.584717,8.56968784 390.659821,8.56968784 422.272618,5.31625541 C453.770209,2.07593108 495.92519,0.0939851351 542.248211,0.0939851351 C591.853735,0.0939851351 636.677362,2.36562027 668.750982,6.02409324 C699.203124,9.49774189 732.415045,9.4990527 762.867187,6.02409324 C794.940806,2.36562027 839.766153,0.0939851351 889.369958,0.0939851351 C986.894189,0.0939851351 1065.95455,8.87641757 1065.95455,19.7089581 L1065.95455,39.3239311 L381.580922,39.3239311 L365.665336,39.3239311 L-318.708295,39.3239311 L-318.708295,19.7089581 C-318.708295,8.87641757 -239.649651,0.0939851351 -142.12542,0.0939851351" id="bottom" fill="#009BC0" mask="url(#mask-4)"></path>
+            </g>
+        </g>
+    </g>
+</svg></div><div class="container"><div class="c12 tac"><h3 class="wallytxt">CONTÁCTANOS</h3></div></div><div class="container infocont"><div class="c4 ct12 cm10 om1"><div class="wallytxt">Contáctanos en Facebook</div><div class="fb_wally"><img src="app/img/fb_wally.png" alt="http://fb.com/salonwally" title="Escanea con la app de Messenger para enviarnos un mensaje" class="tooltip"></div><a href="http://fb.com/salonwally" target="_blank" class="wallytxt linkfb"><i class="fa fa-facebook"></i>/salonwally</a></div><div class="c4 ct12 cm10 om1"><div class="wallytxt">Comunícate con nosotros</div><div class="phone"><div class="wallytxt">55 52 - 75 88</div><div class="wallytxt">57 68 - 97 98</div></div><div class="wallytxt">O mándanos un correo</div><div class="mail"><a href="mailto:info@wally.com.mx" class="wallytxt">info@wally.com.mx</a></div></div><div ng-controller="FormCtrl" class="c4 ct12 cm10 om1"><div class="wallytxt">Llena el formulario y nosotros te contactamos</div><form ng-submit="submitForm($event)" ng-if="!sent"><input type="hidden" name="_from" value="info@wally.com.mx"><input type="hidden" name="_to" value="info@wally.com.mx"><input type="hidden" name="_subject" value="Mensaje de contacto"><input type="text" name="Nombre" placeholder="Tu nombre" required><input type="email" name="Correo" placeholder="Tu correo" required><input type="text" name="Telefono" placeholder="Tu teléfono"><textarea name="Mensaje" placeholder="Tu mensaje" required></textarea><div class="tar"><button type="submit" class="fa fa-paper-plane"> </button></div></form><div ng-if="sent" class="confirmacion"><div class="wallytxt">Gracias por llenar el formulario. Nos pondremos en contacto lo antes posible.</div></div></div></div><div class="waves"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1024px" height="96px" viewBox="0 0 1024 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
+    <title>waves</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="1023.81608 86.47065 1023.81608 0.667595946 0.238945221 0.667595946 0.238945221 86.47065"></polygon>
+        <polygon id="path-3" points="1023.81608 65.4987257 1023.81608 0.368468919 0.238945221 0.368468919 0.238945221 65.4987257"></polygon>
+        <polygon id="path-5" points="1023.81608 39.3239311 1023.81608 0.0939851351 0.238945221 0.0939851351 0.238945221 39.3239311"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="waves">
+            <g id="wave3" transform="translate(0.000000, 0.143796)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M-272.852975,0.667595946 C-215.829576,0.667595946 -164.301664,5.63687973 -127.430671,13.6393797 C-92.4218845,21.2368392 -54.2440806,21.2368392 -19.2370136,13.6393797 C17.633979,5.63687973 69.1618918,0.667595946 126.18529,0.667595946 C179.43613,0.667595946 227.896476,5.00113649 264.105465,12.0900014 C300.445136,19.2050824 339.616804,19.2050824 375.958194,12.0900014 C412.165464,5.00113649 460.625809,0.667595946 513.87665,0.667595946 C570.900048,0.667595946 622.427961,5.63687973 659.298953,13.6393797 C694.30602,21.2368392 732.485544,21.2368392 767.492611,13.6393797 C804.363603,5.63687973 855.891516,0.667595946 912.914914,0.667595946 C1025.02557,0.667595946 1115.90913,19.8749068 1115.90913,43.569123 L1115.90913,86.47065 L329.179509,86.47065 L310.884151,86.47065 L-475.845474,86.47065 L-475.845474,43.569123 C-475.845474,19.8749068 -384.963627,0.667595946 -272.852975,0.667595946" id="Fill-1" fill="#007E9C" mask="url(#mask-2)"></path>
+            </g>
+            <g id="wave2" transform="translate(0.000000, 21.116769)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Clip-5"></g>
+                <path d="M25.9857068,0.368468919 C75.5912314,0.368468919 120.414858,4.14098243 152.488478,10.2139689 C182.942339,15.9815365 216.152541,15.9815365 246.606402,10.2139689 C278.678302,4.14098243 323.503649,0.368468919 373.107454,0.368468919 C419.430475,0.368468919 461.587175,3.65729324 493.083047,9.03948243 C524.695844,14.440023 558.770948,14.440023 590.383744,9.03948243 C621.881335,3.65729324 664.036316,0.368468919 710.359337,0.368468919 C759.964862,0.368468919 804.788489,4.14098243 836.862109,10.2139689 C867.31425,15.9815365 900.526171,15.9815365 930.980033,10.2139689 C963.053652,4.14098243 1007.87728,0.368468919 1057.48108,0.368468919 C1155.00532,0.368468919 1234.06568,14.9486176 1234.06568,32.9329419 L1234.06568,65.4987257 L549.692048,65.4987257 L533.776463,65.4987257 L-150.597168,65.4987257 L-150.597168,32.9329419 C-150.597168,14.9486176 -71.5385243,0.368468919 25.9857068,0.368468919" id="Fill-4" fill="#56C2E7" mask="url(#mask-4)"></path>
+            </g>
+            <g id="wave1" transform="translate(0.000000, 56.508661)">
+                <mask id="mask-6" fill="white">
+                    <use xlink:href="#path-5"></use>
+                </mask>
+                <g id="Clip-8"></g>
+                <path d="M-142.12542,0.0939851351 C-92.5198953,0.0939851351 -47.6962683,2.36562027 -15.6226487,6.02409324 C14.8312127,9.4990527 48.0414142,9.4990527 78.4952756,6.02409324 C110.567176,2.36562027 155.392522,0.0939851351 204.996327,0.0939851351 C251.319348,0.0939851351 293.476049,2.07593108 324.97192,5.31625541 C356.584717,8.56968784 390.659821,8.56968784 422.272618,5.31625541 C453.770209,2.07593108 495.92519,0.0939851351 542.248211,0.0939851351 C591.853735,0.0939851351 636.677362,2.36562027 668.750982,6.02409324 C699.203124,9.49774189 732.415045,9.4990527 762.867187,6.02409324 C794.940806,2.36562027 839.766153,0.0939851351 889.369958,0.0939851351 C986.894189,0.0939851351 1065.95455,8.87641757 1065.95455,19.7089581 L1065.95455,39.3239311 L381.580922,39.3239311 L365.665336,39.3239311 L-318.708295,39.3239311 L-318.708295,19.7089581 C-318.708295,8.87641757 -239.649651,0.0939851351 -142.12542,0.0939851351" id="Fill-7" fill="#D0E9FA" mask="url(#mask-6)"></path>
+            </g>
+        </g>
+    </g>
+</svg></div></section></div><script src="https://dbo.space/dw3/js/14"></script><script src="app/js/app.js"></script></body></html>

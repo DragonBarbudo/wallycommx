@@ -1,0 +1,186 @@
+include app/_config.jade
+
++html5
+  +head('Dw3', 'Dragon, barbudo, webeloper, Dragon Webeloper, Dragon webeloper 3', 'Dragón Webeloper es un framework creado por dragonbarbudo.com para el desarrollo de sitios web empresariales.')
+  
+  body(ng-app="dw3")
+    +menu({class:'horizontal fluid'})
+    
+    div(ng-controller="MainCtrl")
+      header.container.fluid#wally(ng-class="headerClass")
+        .c12.tac: img(src="app/img/wally.svg", alt="Wally Natación y Fiestas Infantiles", title="Wally Natación y Fiestas Infantiles").tooltip
+        .waves: include app/img/waves.svg
+        slick(autoplay="true", arrows="false", dots="true", settings="slickConfig").fluid
+          div
+            .mainTitle ACUATIFIESTAS INFANTILES
+            .char.right.crab_a: img(src="app/img/char_crab.svg").fluid
+            .char.right.crab_b: img(src="app/img/char_crab.svg").fluid
+            .char.left.mermaid_a: img(src="app/img/char_mermaid.svg").fluid
+            
+          div
+            .mainTitle CLASES DE NATACIÓN
+            .char.right.crab_a: img(src="app/img/char_crab.svg").fluid
+            .char.right.crab_b: img(src="app/img/char_crab.svg").fluid
+            .char.left.ray_a: img(src="app/img/char_ray.svg").fluid
+          div
+            .mainTitle CURSO DE VERANO
+            .char.right.crab_a: img(src="app/img/char_crab.svg").fluid
+            .char.right.crab_b: img(src="app/img/char_crab.svg").fluid
+            .char.left.octo_a: img(src="app/img/char_octopus.svg").fluid
+      
+      
+      
+      section#about
+        .wavehr: include app/img/wavehr.svg
+        .container
+          .c6.g.cm10.om1
+            h1 WALLY NATACIÓN Y FIESTAS INFANTILES
+            p Wally es una escuela de natación y salón de fiestas infantiles localizado en la colonia Jardín Balbuena, a un costado de la delegación Venustiano Carranza en el oriente de la Ciudad de México.
+            .initmap
+              .where
+                p En la colonia
+                p: strong Jardín Balbuena
+                p CDMX
+              .pin
+          .c5.cm10.o1.g.imgCircles
+                
+      section#before
+        .wavehr: include app/img/wavehr.svg
+        .container.nom
+          .c7
+          .c5
+            img(src="app/img/char_boy.svg").boy
+        .container
+          .c5.g.cm10.om1
+            .minititle Hace mucho tiempo...
+            p Abrimos nuestras puertas por allá del año 1996 y desde entonces hemos tenido acuatifiestas infantiles, clases de natación, cursos de verano, graduaciones, cursos de páscua y más.
+          .c2.g.nom
+            img(src="app/img/char_diver.svg").diver.fluid
+          .c5.g.cm10.om1
+            .minititle Y ahora
+            p Tenemos clases de natación para niños de edad preescolar, primaria y para jóvenes de 14 años. También celebramos cumpleaños, logros y festejos para niños de todas las edades, todos los días de lunes a domingo.
+      
+      section#acuatifiestas
+        .wavehr: include app/img/wavehr.svg
+        .waves: include app/img/waves.svg
+        .container: .c12.tac.cm10.om1: h3.wallytxt ACUATIFIESTAS INFANTILES
+        .container
+          .c6.g.cm10.om1
+            p Nuestras acuatifiestas estan llenas de diversión, ya que además de la super alberca también contamos con área de juegos infantiles y todo un salón para que te festejen tu fiesta.
+          .c5.o1.tar.nom
+            img(src="app/img/char_mermaid.svg", alt="Acuatifiestas infantiles")
+        .container.paquetes
+          .c4.g.cm10.om1
+            h4.wallytxt Paquetes para fiestas
+          .c4.g.cm10.om1
+            .paq
+              .paqtitle 60 personas
+              .time 4.5 hrs de servicio
+              ul
+                li 2.5 hrs de alberca
+                li Guardavidas
+                li Mesas y sillas
+                li Manteles
+                li Música
+                li Área de juegos
+              //.extra Persona extra: 
+                strong $105
+          .c4.g.cm10.om1
+            .paq
+              .paqtitle 100 personas
+              .time 5 hrs de servicio
+              ul
+                li 3 hrs de alberca
+                li Guardavidas
+                li Mesas y sillas
+                li Manteles
+                li Música
+                li Área de juegos
+              //.extra Persona extra: 
+                strong $80
+        .container.tambien
+          .c8.o2 También contamos con servicio de alimentos, dulcería, artículos para natación y taller de pintura (figuras de cerámica).
+              
+              
+        
+      section#natacion
+        .wavehr: include app/img/wavehr.svg
+        .waves: include app/img/waves.svg
+        .container: .c12.tac.cm10.om1: h3.wallytxt CLASES DE NATACIÓN
+        .container
+          .c6.g.cm10.om1
+            p Saber nadar es superimportante, por eso te invitamos a que aprendas con nosotros y nuestros maestros quienes estan listos para convertirte en todo un delfín.
+          .c5.o1.tar.nom
+            img(src="app/img/char_ray.svg", alt="Clases de natación")
+        .container
+          .c4.o1.g.cm10.om1
+            h4.wallytxt Ven a nadar 1, 2 o 3 veces a la semana.
+          .c4.o1.g.cm10.om1
+            h4.wallytxt Elige entre Martes, Jueves y Viernes.
+        .container.tambien
+          .c8.o2 Sólo necesitas traer tu <strong>traje de baño</strong>, <strong>toalla</strong> y <strong>gorra</strong>, nosotros te prestamos lo demás.
+              
+          
+        
+      section#curso-de-verano
+        .wavehr: include app/img/wavehr.svg
+        .waves: include app/img/waves.svg
+        .container: .c12.tac.cm10.om1: h3.wallytxt CURSO DE VERANO
+        .container
+          .c6.g.cm10.om1
+            p No te aburras en tu casa, ven a nadar a Wally en tus vacaciones de verano y diviértete echándote chapuzones. Y si no sabes nadar muy bien, no te preocupes, también te daremos clases de natación.
+          .c5.o1.tar.nom
+            img(src="app/img/char_octopus.svg", alt="Curso de verano")
+        .container.tac.nextcurso
+          .c8.o2.g.cm10.om1
+            .wallytxt Nuestro próximo curso de verano inicia
+            h4.wallytxt el 20 de Julio de 2016
+        .container.tambien
+          .c8.o2 Comunícate con nosotros y entérate de lo que haremos en estas vacaciones.
+      
+      section#instalaciones
+        .wavehr: include app/img/wavehr.svg
+        .container: .c12.tac.cm10.om1
+          h3.wallytxt NUESTRAS INSTALACIONES
+        .container
+          .c6.g.cm10.om1
+            p Tenemos una alberca totalmente techada y en óptimas condiciones que aseguran comodidad e higiene. Contamos con sistemas de filtrado y mantenemos el agua tibia para que no tengas que preocuparte por la salud de tus pequeños. 
+            p El salón de fiestas es un espacio cómodo y acogedor donde tu familia y amigos disfrutarán de una linda experiencia. También contamos con área de juegos, una mesa de aire y un futbolito para que todos se diviertan al máximo.
+          .c5.o1.tar.cm10.om1
+            slick(autoplay="true", vertical="true").instagal
+              ng-swipebox(photos="[{src:'app/img/gal/f1.jpg', href:'app/img/gal/f1.jpg'}, {src:'app/img/gal/f2.jpg', href:'app/img/gal/f2.jpg'}, {src:'app/img/gal/f3.jpg', href:'app/img/gal/f3.jpg'}, {src:'app/img/gal/f4.jpg', href:'app/img/gal/f4.jpg'}, {src:'app/img/gal/f5.jpg', href:'app/img/gal/f5.jpg'}, {src:'app/img/gal/f6.jpg', href:'app/img/gal/f6.jpg'}, {src:'app/img/gal/f7.jpg', href:'app/img/gal/f7.jpg'}]")      
+      
+      section#contacto
+        .wavehr: include app/img/wavehr.svg 
+        .container: .c12.tac: h3.wallytxt CONTÁCTANOS
+        .container.infocont
+          .c4.ct12.cm10.om1
+            .wallytxt Contáctanos en Facebook
+            .fb_wally: img(src="app/img/fb_wally.png", alt="http://fb.com/salonwally", title="Escanea con la app de Messenger para enviarnos un mensaje").tooltip
+            a(href="http://fb.com/salonwally", target="_blank").wallytxt.linkfb
+              i.fa.fa-facebook
+              | /salonwally
+          .c4.ct12.cm10.om1
+            .wallytxt Comunícate con nosotros
+            .phone
+              .wallytxt 55 52 - 75 88
+              .wallytxt 57 68 - 97 98
+            .wallytxt O mándanos un correo
+            .mail
+              a(href="mailto:info@wally.com.mx").wallytxt info@wally.com.mx
+          .c4.ct12.cm10.om1(ng-controller="FormCtrl")
+            .wallytxt Llena el formulario y nosotros te contactamos
+            form(ng-submit="submitForm($event)", ng-if="!sent")
+              input(type="hidden", name="_from", value="info@wally.com.mx")
+              input(type="hidden", name="_to", value="info@wally.com.mx")
+              input(type="hidden", name="_subject", value="Mensaje de contacto")
+              input(type="text", name="Nombre", placeholder="Tu nombre", required)
+              input(type="email", name="Correo", placeholder="Tu correo", required)
+              input(type="text", name="Telefono", placeholder="Tu teléfono")
+              textarea(name="Mensaje", placeholder="Tu mensaje", required)
+              .tar
+                button(type="submit").fa.fa-paper-plane 
+            .confirmacion(ng-if="sent")
+              .wallytxt Gracias por llenar el formulario. Nos pondremos en contacto lo antes posible.
+        .waves: include app/img/waves.svg
+    +scripts
