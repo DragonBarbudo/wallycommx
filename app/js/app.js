@@ -1,13 +1,14 @@
 var app = angular.module('dw3', [
   'ng-backstretch',
   'ngSwipebox',
+  'angular-google-analytics',
   'tooltipster',
   'duScroll',
   'slickCarousel'
 ]);
 
-app.config(function(){
-
+app.config(function(AnalyticsProvider){
+  AnalyticsProvider.setAccount('UA-30012102-1');
 });
 
 
@@ -39,7 +40,8 @@ angular.module("ngSwipebox").run(["$templateCache", function($templateCache) {$t
 
 
 
-app.controller('FormCtrl', function($scope, $http){
+app.controller('FormCtrl', function($scope, $http, Analytics){
+  Analytics.trackEvent('form', 'sent', 'Formulario de contacto');
   $scope.sent = false;
   $scope.submitForm = function(e){
     console.log(e.target);
