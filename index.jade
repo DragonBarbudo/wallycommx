@@ -171,11 +171,11 @@ include app/_config.jade
           .c4.ct12.cm10.om1(ng-controller="FormCtrl")
             .wallytxt Llena el formulario y nosotros te contactamos
             form(ng-submit="submitForm($event)", ng-if="!sent")
-              input(type="hidden", name="_from", value="info@wally.com.mx")
+              input(type="hidden", name="_from", value="{{customermail}}")
               input(type="hidden", name="_to", value="info@wally.com.mx")
               input(type="hidden", name="_subject", value="Mensaje de contacto")
               input(type="text", name="Nombre", placeholder="Tu nombre", required)
-              input(type="email", name="Correo", placeholder="Tu correo", required)
+              input(type="email", name="Correo", placeholder="Tu correo", ng-model="customermail", required)
               input(type="text", name="Telefono", placeholder="Tu teléfono")
               textarea(name="Mensaje", placeholder="Tu mensaje", required)
               .tar
