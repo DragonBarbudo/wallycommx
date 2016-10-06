@@ -1,7 +1,3 @@
-/*
-  DRAGON WEBELOPER 3
-  | _dw3.less | v 0.1 |
- */
 /* MEDIA QUERIES */
 @media only screen and (min-width: 1200px) {
   .nod {
@@ -1437,6 +1433,30 @@ margin-left:calc(100% + 5px);
 .t {
   outline: 1px dashed rgba(0, 0, 0, 0.2);
 }
+.tac {
+  text-align: center;
+}
+.tar {
+  text-align: right;
+}
+.tal {
+  text-align: left;
+}
+.mall {
+  margin: 5px;
+}
+.mt {
+  margin-top: 5px;
+}
+.mb {
+  margin-bottom: 5px;
+}
+.mt2 {
+  margin-top: 10px;
+}
+.mb2 {
+  margin-bottom: 10px;
+}
 [backstretch] {
   position: relative;
 }
@@ -1990,7 +2010,7 @@ section h3 {
   font-size: 1.4em;
 }
 #about .initmap {
-  background-image: url(../img/initmap.png);
+  background-image: url(img/initmap.png);
   background-repeat: no-repeat;
   background-position: center;
   width: 502px;
@@ -2034,7 +2054,7 @@ section h3 {
   text-shadow: -2px 0 0 #d5d5d5;
 }
 #about .initmap .pin {
-  background: url(../img/pin.png);
+  background: url(img/pin.png);
   width: 209px;
   height: 209px;
   background-size: cover;
@@ -2043,7 +2063,7 @@ section h3 {
   top: 0px;
 }
 #about .imgCircles {
-  background-image: url(../img/circlekids.png);
+  background-image: url(img/circlekids.png);
   background-size: 80%;
   background-position: top center;
 }
