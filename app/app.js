@@ -56,6 +56,13 @@ app.controller('FormCtrl', function($scope, $http){
 
 
 
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-30012102-1');
+
+
 
 /* OTHER CODES */
 /* http://embed.plnkr.co/UAELQkmh18RVDn1cOAaW/ */
