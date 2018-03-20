@@ -7,13 +7,8 @@ var app = angular.module('dw4', [
   'tooltipster',
   'duScroll',
   'slickCarousel',
-  'angular-google-analytics',
   'ngSwipebox'
 ]);
-
-app.config(function(AnalyticsProvider){
-  AnalyticsProvider.setAccount('UA-30012102-1');
-});
 
 
 
