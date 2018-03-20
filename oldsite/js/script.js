@@ -150,3 +150,15 @@ function section(){
 	$('#fullTitle img').animate({width:'0%'}, 200).animate({width:'100%'}, 600, 'easeOutElastic');
 	$('#illust img').animate({width:'0%'}, 200).animate({width:'100%'}, 600, 'easeOutElastic');
 }
+
+
+
+
+
+
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-30012102-1');
