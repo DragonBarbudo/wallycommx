@@ -7,7 +7,7 @@
 		"uuidString": "597E28C1-5079-4159-A73D-23BFC164A52E"
 		}
 	],
-"creatorBuild": "26261",
+"creatorBuild": "26667",
 "files": {
 	"\/.htaccess": {
 		"cB": 0,
@@ -249,6 +249,7 @@
 	"\/app\/img\/gal\/f1.jpg": {
 		"ft": 16384,
 		"iS": 138159,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/app\/img\/gal\/f1.jpg",
 		"oF": 0,
@@ -259,6 +260,7 @@
 	"\/app\/img\/gal\/f2.jpg": {
 		"ft": 16384,
 		"iS": 158659,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/app\/img\/gal\/f2.jpg",
 		"oF": 0,
@@ -269,6 +271,7 @@
 	"\/app\/img\/gal\/f3.jpg": {
 		"ft": 16384,
 		"iS": 124220,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/app\/img\/gal\/f3.jpg",
 		"oF": 0,
@@ -279,6 +282,7 @@
 	"\/app\/img\/gal\/f4.jpg": {
 		"ft": 16384,
 		"iS": 135633,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/app\/img\/gal\/f4.jpg",
 		"oF": 0,
@@ -289,6 +293,7 @@
 	"\/app\/img\/gal\/f5.jpg": {
 		"ft": 16384,
 		"iS": 154108,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/app\/img\/gal\/f5.jpg",
 		"oF": 0,
@@ -299,6 +304,7 @@
 	"\/app\/img\/gal\/f6.jpg": {
 		"ft": 16384,
 		"iS": 180472,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/app\/img\/gal\/f6.jpg",
 		"oF": 0,
@@ -309,6 +315,7 @@
 	"\/app\/img\/gal\/f7.jpg": {
 		"ft": 16384,
 		"iS": 159276,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/app\/img\/gal\/f7.jpg",
 		"oF": 0,
@@ -390,6 +397,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/CNAME",
+		"oF": 0
+		},
+	"\/condiciones.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/condiciones.pdf",
 		"oF": 0
 		},
 	"\/curso.pdf": {
@@ -876,6 +890,7 @@
 	"\/oldsite\/imgs\/background.jpg": {
 		"ft": 16384,
 		"iS": 249500,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/oldsite\/imgs\/background.jpg",
 		"oF": 0,
@@ -886,6 +901,7 @@
 	"\/oldsite\/imgs\/bg.jpg": {
 		"ft": 16384,
 		"iS": 4231,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/oldsite\/imgs\/bg.jpg",
 		"oF": 0,
@@ -1090,6 +1106,7 @@
 	"\/oldsite\/imgs\/genderboy.jpg": {
 		"ft": 16384,
 		"iS": 2729,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/oldsite\/imgs\/genderboy.jpg",
 		"oF": 0,
@@ -1100,6 +1117,7 @@
 	"\/oldsite\/imgs\/gendergirl.jpg": {
 		"ft": 16384,
 		"iS": 2657,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/oldsite\/imgs\/gendergirl.jpg",
 		"oF": 0,
@@ -1132,6 +1150,7 @@
 	"\/oldsite\/imgs\/input.jpg": {
 		"ft": 16384,
 		"iS": 1818,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/oldsite\/imgs\/input.jpg",
 		"oF": 0,
@@ -1425,6 +1444,13 @@
 		"oAP": "\/oldsite\/underwater.html",
 		"oF": 0
 		},
+	"\/sitemap.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/sitemap.xml",
+		"oF": 0
+		},
 	"\/wally.png": {
 		"ft": 32768,
 		"iS": 17870,
@@ -1445,7 +1471,8 @@
 	"creationDate": 543262988,
 	"displayValue": "wallycommx",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "brackets_brown"
+	"iconImageName": "brackets_brown",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -1453,6 +1480,7 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"autoprefixerEnableIEGrid": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,
@@ -3247,6 +3275,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {
