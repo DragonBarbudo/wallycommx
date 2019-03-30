@@ -83,3 +83,12 @@ angular.module("ngBox",[]).directive("ngBox",["$timeout",function(a){return{rest
 
 
 angular.module("ngSwipebox").run(["$templateCache", function($templateCache) {$templateCache.put("swipebox.html","<div ng-repeat=\'photo in photos\'>\n        <a ng-href=\'{{ photo.href }}\' class=\'swipebox\' title=\'{{ photo.title }}\'>\n            <img ng-src=\'{{ photo.src }}\' alt=\'image\'>\n        </a>\n    </div>\n");}]);
+
+
+document.getElementById('promoopen').addEventListener('click', function () {
+  if (this.classList.contains('closed')){
+    this.classList.remove('closed')
+  } else {
+    this.classList.add('closed')
+  }
+})

@@ -1444,6 +1444,17 @@
 		"oAP": "\/oldsite\/underwater.html",
 		"oF": 0
 		},
+	"\/promo.png": {
+		"ft": 32768,
+		"iS": 190465,
+		"oA": 0,
+		"oAP": "\/promo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/sitemap.xml": {
 		"cB": 0,
 		"ft": 8192,
