@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,9 +9,13 @@
 <body>
     <div id="app">
         <!-- Buefy components goes here -->
-        <button v-for="gal in galeria">
-            <figure class="image is-1by1"><img :src="'https://dragonbarbudo.com/'+gal" alt="Foto"></figure>
-        </button> 
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column"><div class="is-6">
+                        <figure class="image is-1by1"><img :src="'https://dragonbarbudo.com/'+gal" alt="Foto"></figure>
+                </div></div>
+            </div>
+        </div>
     </div>
 
     <script src="https://unpkg.com/vue"></script>
@@ -31,7 +35,6 @@
                 var _this = this
                 console.log('runinig')
                 axios.get('https://dragonbarbudo.com/wallis.php').then(function(response){
-                    console.log(response.data)
                     _this.galeria = response.data
                 })
             }
