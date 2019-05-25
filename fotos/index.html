@@ -9,7 +9,9 @@
 <body>
     <div id="app">
         <!-- Buefy components goes here -->
-        {{galeria}}
+        <button v-for="gal in galeria">
+            <figure class="image is-1by1"><img src="https://dragonbarbudo.com/"+gal alt="Foto"></figure>
+        </button> 
     </div>
 
     <script src="https://unpkg.com/vue"></script>
@@ -20,16 +22,17 @@
     <script>
         new Vue({
             el: '#app',
-            data () {
+            data: function () {
                 return {
                     galeria: []
                 }
             },
-            mounted() {
+            mounted(){
                 var _this = this
+                console.log('runinig')
                 axios.get('https://dragonbarbudo.com/wallis.php').then(function(response){
-                    console.log(response)
-                    this.galeria = response.data
+                    console.log(response.data)
+                    _this.galeria = response.data
                 })
             }
         })
