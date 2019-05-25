@@ -9,10 +9,13 @@
 <body>
     <div id="app">
         <!-- Buefy components goes here -->
+        <section class="section">
+            <div class="container"><div class="columns has-text-centered">   <img src="https://wally.com.mx/app/img/wally.svg" alt="Wally"></div></div>
+        </section>
         <div class="container">
             <div class="columns is-multiline">
-                <div class="column is-6" v-for="gal in galeria">
-                        <figure class="image is-1by1"><img :src="'https://dragonbarbudo.com/'+gal" alt="Foto"></figure>
+                <div class="column is-2" v-for="gal in galeria">
+                        <figure class="image"><img :src="'https://dragonbarbudo.com/'+gal" alt="Foto"></figure>
                 </div>
             </div>
         </div>
@@ -33,7 +36,6 @@
             },
             mounted(){
                 var _this = this
-                console.log('runinig')
                 axios.get('https://dragonbarbudo.com/wallis.php').then(function(response){
                     _this.galeria = response.data
                 })
