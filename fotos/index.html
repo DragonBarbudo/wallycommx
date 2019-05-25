@@ -28,6 +28,7 @@
             mounted() {
                 var _this = this
                 axios.get('https://dragonbarbudo.com/wallis.php').then(function(response){
+                    console.log(response)
                     this.galeria = response.data
                 })
             }
