@@ -10,7 +10,7 @@
     <div id="app">
         <!-- Buefy components goes here -->
         <button v-for="gal in galeria">
-            <figure class="image is-1by1"><img src="https://dragonbarbudo.com/"+gal alt="Foto"></figure>
+            <figure class="image is-1by1"><img :src="'https://dragonbarbudo.com/'+gal" alt="Foto"></figure>
         </button> 
     </div>
 
