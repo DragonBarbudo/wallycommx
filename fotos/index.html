@@ -11,9 +11,9 @@
         <!-- Buefy components goes here -->
         <div class="container">
             <div class="columns is-multiline">
-                <div class="column"><div class="is-6">
+                <div class="column is-6" v-for="gal in galeria">
                         <figure class="image is-1by1"><img :src="'https://dragonbarbudo.com/'+gal" alt="Foto"></figure>
-                </div></div>
+                </div>
             </div>
         </div>
     </div>
