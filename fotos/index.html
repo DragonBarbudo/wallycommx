@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">
+    <title>Wally | Fotografias</title>
+</head>
+<body>
+    <div id="app">
+        <!-- Buefy components goes here -->
+        {{galeria}}
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <!-- Full bundle -->
+    <script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data () {
+                return {
+                    galeria: []
+                }
+            },
+            mounted() {
+                var _this = this
+                axios.get('https://dragonbarbudo.com/wallis.php').then(function(response){
+                    this.galeria = response.data
+                })
+            }
+        })
+    </script>
+</body>
+</html>
