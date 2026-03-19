@@ -40,7 +40,7 @@ mixin stylesheets
 mixin menu(attr)
   nav&attributes(attr)
     label(for="navigationCheckboxButton").navBtn.fa.fa-bars
-    input(type="checkbox", checked="false")#navigationCheckboxButton
+    input(type="checkbox")#navigationCheckboxButton
     ul
       - each item in menuNav
         - if(item[2]==null)
@@ -67,7 +67,7 @@ mixin menu(attr)
 mixin form(_to, _subject , respuesta)
   - if(!respuesta){ respuesta = "Mensaje enviado. Nos pondremos en contacto."}
   form(ng-controller="FormCtrl", ng-submit="submitForm($event)")&attributes(attributes)
-    input(type="hidden", name="_to", value="#{to}")
+    input(type="hidden", name="_to", value="#{_to}")
     input(type="email", name="_from", ng-model="email").not.nom.nod
     input(type="hidden", name="_subject", value="#{_subject}")
     div(ng-hide="sent")

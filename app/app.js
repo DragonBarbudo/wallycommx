@@ -20,6 +20,15 @@ app.run(function(){
 app.controller('MainCtrl', function($scope){
 
   $scope.headerClass = 'green';
+  $scope.galleryPhotos = [
+    { src: 'app/img/gal/f1.jpg', href: 'app/img/gal/f1.jpg' },
+    { src: 'app/img/gal/f2.jpg', href: 'app/img/gal/f2.jpg' },
+    { src: 'app/img/gal/f3.jpg', href: 'app/img/gal/f3.jpg' },
+    { src: 'app/img/gal/f4.jpg', href: 'app/img/gal/f4.jpg' },
+    { src: 'app/img/gal/f5.jpg', href: 'app/img/gal/f5.jpg' },
+    { src: 'app/img/gal/f6.jpg', href: 'app/img/gal/f6.jpg' },
+    { src: 'app/img/gal/f7.jpg', href: 'app/img/gal/f7.jpg' }
+  ];
   $scope.slickConfig={
     event:{
       beforeChange : function(event, slick, currentslide, nextSlide){
@@ -35,22 +44,25 @@ app.controller('MainCtrl', function($scope){
 });
 app.controller('FormCtrl', function($scope, $http){
   $scope.sent = false;
+  $scope.submitError = false;
   $scope.submitForm = function(e){
-    console.log(e.target);
     var datos = $(e.target).serialize();
     $scope.form = {};
+    $scope.submitError = false;
     $http({
       method: 'GET',
-      url: 'http://www.dragonbarbudo.com/api/email.php?'+datos
+      url: 'https://www.dragonbarbudo.com/api/email.php?' + datos
     }).then(function(result){
-      console.log('http://www.dragonbarbudo.com/api/email.php?'+datos);
-      if(result.data=="1"){
-        console.log('done');
+      if(result.data == "1"){
         $scope.sent = true;
+      } else {
+        $scope.submitError = true;
       }
+    }, function(){
+      $scope.submitError = true;
     });
 
-  }
+  };
 });
 
 
@@ -85,10 +97,13 @@ angular.module("ngBox",[]).directive("ngBox",["$timeout",function(a){return{rest
 angular.module("ngSwipebox").run(["$templateCache", function($templateCache) {$templateCache.put("swipebox.html","<div ng-repeat=\'photo in photos\'>\n        <a ng-href=\'{{ photo.href }}\' class=\'swipebox\' title=\'{{ photo.title }}\'>\n            <img ng-src=\'{{ photo.src }}\' alt=\'image\'>\n        </a>\n    </div>\n");}]);
 
 
-document.getElementById('promoopen').addEventListener('click', function () {
-  if (this.classList.contains('closed')){
-    this.classList.remove('closed')
-  } else {
-    this.classList.add('closed')
-  }
-})
+var promoOpen = document.getElementById('promoopen');
+if (promoOpen) {
+  promoOpen.addEventListener('click', function () {
+    if (this.classList.contains('closed')) {
+      this.classList.remove('closed');
+    } else {
+      this.classList.add('closed');
+    }
+  });
+}

@@ -1,7 +1,7 @@
 mixin menu(attr)
   nav&attributes(attr)
     label(for="navigationCheckboxButton").navBtn.fa.fa-bars
-    input(type="checkbox", checked="false")#navigationCheckboxButton
+    input(type="checkbox")#navigationCheckboxButton
     ul
       - each item in menuNav
         - if(item[2]==null)

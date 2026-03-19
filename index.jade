@@ -78,7 +78,7 @@ include _config.jade
         .container: .c12.tac.cm10.om1: h3.wallytxt ACUATIFIESTAS INFANTILES
         .container
           .c6.g.cm10.om1
-            p Nuestras acuatifiestas estan llenas de diversión, ya que además de la super alberca también contamos con área de juegos infantiles y todo un salón para que te festejen tu fiesta.
+            p Nuestras acuatifiestas están llenas de diversión, ya que además de la super alberca también contamos con área de juegos infantiles y todo un salón para que te festejen tu fiesta.
           .c5.o1.tar.nom
             img(src="app/img/char_mermaid.svg", alt="Acuatifiestas infantiles")
         .container.paquetes
@@ -121,7 +121,7 @@ include _config.jade
         .container: .c12.tac.cm10.om1: h3.wallytxt CLASES DE NATACIÓN
         .container
           .c6.g.cm10.om1
-            p Saber nadar es superimportante, por eso te invitamos a que aprendas con nosotros y nuestros maestros quienes estan listos para convertirte en todo un delfín.
+            p Saber nadar es superimportante, por eso te invitamos a que aprendas con nosotros y nuestros maestros quienes están listos para convertirte en todo un delfín.
           .c5.o1.tar.nom
             img(src="app/img/char_ray.svg", alt="Clases de natación")
         .container
@@ -145,7 +145,7 @@ include _config.jade
             img(src="app/img/char_octopus.svg", alt="Curso de verano")
         .container.tac.nextcurso
           .c8.o2.g.cm10.om1
-            .wallytxt Estamos preparando nuestro próximo curso de vearno
+            .wallytxt Estamos preparando nuestro próximo curso de verano
             h4.wallytxt ¡mantente atento!
         .container.tambien
           .c8.o2 Comunícate con nosotros y entérate de lo que haremos en estas vacaciones.
@@ -160,7 +160,9 @@ include _config.jade
             p El salón de fiestas es un espacio cómodo y acogedor donde tu familia y amigos disfrutarán de una linda experiencia. También contamos con área de juegos, una mesa de aire y un futbolito para que todos se diviertan al máximo.
           .c5.o1.tar.cm10.om1
             slick(autoplay="true", vertical="true").instagal
-              ng-swipebox(photos="[{src:'app/img/gal/f1.jpg', href:'app/img/gal/f1.jpg'}, {src:'app/img/gal/f2.jpg', href:'app/img/gal/f2.jpg'}, {src:'app/img/gal/f3.jpg', href:'app/img/gal/f3.jpg'}, {src:'app/img/gal/f4.jpg', href:'app/img/gal/f4.jpg'}, {src:'app/img/gal/f5.jpg', href:'app/img/gal/f5.jpg'}, {src:'app/img/gal/f6.jpg', href:'app/img/gal/f6.jpg'}, {src:'app/img/gal/f7.jpg', href:'app/img/gal/f7.jpg'}]")      
+              div(ng-repeat="photo in galleryPhotos track by $index")
+                a(ng-href="{{ photo.href }}", title="{{ photo.title || 'Instalaciones Wally' }}" wally-swipebox="galleryPhotos" swipebox-index="{{ $index }}")
+                  img(ng-src="{{ photo.src }}", alt="Instalaciones Wally")
       
       section#contacto
         .wavehr: include app/img/wavehr.svg 
@@ -168,8 +170,8 @@ include _config.jade
         .container.infocont
           .c4.ct12.cm10.om1
             .wallytxt Contáctanos en Facebook
-            .fb_wally: img(src="app/img/fb_wally.png", alt="http://fb.com/salonwally", title="Escanea con la app de Messenger para enviarnos un mensaje").tooltip
-            a(href="http://fb.com/salonwally", target="_blank").wallytxt.linkfb
+            .fb_wally: img(src="app/img/fb_wally.png", alt="https://fb.com/salonwally", title="Escanea con la app de Messenger para enviarnos un mensaje").tooltip
+            a(href="https://fb.com/salonwally", target="_blank", rel="noopener noreferrer").wallytxt.linkfb
               i.fa.fa-facebook
               | /salonwally
           .c4.ct12.cm10.om1
@@ -183,7 +185,7 @@ include _config.jade
           .c4.ct12.cm10.om1(ng-controller="FormCtrl")
             .wallytxt Llena el formulario y nosotros te contactamos
             form(ng-submit="submitForm($event)", ng-if="!sent")
-              input(type="hidden", name="_from", value="{{customermail}}")
+              input(type="hidden", name="_from", ng-value="customermail")
               input(type="hidden", name="_to", value="info@wally.com.mx")
               input(type="hidden", name="_subject", value="Mensaje de contacto")
               input(type="text", name="Nombre", placeholder="Tu nombre", required)
@@ -192,6 +194,8 @@ include _config.jade
               textarea(name="Mensaje", placeholder="Tu mensaje", required)
               .tar
                 button(type="submit").fa.fa-paper-plane 
+            .confirmacion(ng-if="submitError")
+              .wallytxt No pudimos enviar tu mensaje. Inténtalo de nuevo o escríbenos a info@wally.com.mx.
             .confirmacion(ng-if="sent")
               .wallytxt Gracias por llenar el formulario. Nos pondremos en contacto lo antes posible.
         .waves: include app/img/waves.svg
